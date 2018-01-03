@@ -1,4 +1,7 @@
-MSc Course: "Digital Design with VHDL" (Lab Exercises) MSc Title: "Electronics & Information Processing" @ University of Patras, Greece Author: Dimos Katsimardos Period: 2015 November - 2016 February
+MSc Course: "Digital Design with VHDL" (Lab Exercises) 
+MSc Title: "Electronics & Information Processing" @ University of Patras, Greece 
+Author: Dimos Katsimardos 
+Period: 2015 November - 2016 February
 
 VHDL lab exercises from simple behavioral and sequential circuits to a simple CPU design with hardwired and microprogrammed logic
 
