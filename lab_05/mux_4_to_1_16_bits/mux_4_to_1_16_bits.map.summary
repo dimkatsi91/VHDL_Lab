@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sun Dec 06 17:45:08 2015
+Quartus II 64-Bit Version : 7.2 Build 151 09/26/2007 SJ Full Version
+Revision Name : mux_4_to_1_16_bits
+Top-level Entity Name : mux_4_to_1_16_bits
+Family : Cyclone II
+Total logic elements : 32
+    Total combinational functions : 32
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 82
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

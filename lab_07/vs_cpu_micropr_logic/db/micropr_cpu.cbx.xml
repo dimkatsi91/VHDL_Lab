@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="micropr_cpu">
+		<CBX_INST_ENTRY INSTANCE_NAME="|micropr_cpu|memory:external_mem|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_6j41.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|micropr_cpu|mseq:microsequencer|microcode_memory:MICROCODE_MEM|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_l381.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

@@ -1,0 +1,29 @@
+|look_ahead
+A[0] => G[0].IN0
+A[0] => P[0].IN0
+A[1] => G[1].IN0
+A[1] => P[1].IN0
+A[2] => G[2].IN0
+A[2] => P[2].IN0
+A[3] => P[3].IN0
+A[3] => G[3].IN0
+B[0] => B_xor[0].IN1
+B[1] => B_xor[1].IN1
+B[2] => B_xor[2].IN1
+B[3] => B_xor[3].IN1
+Cin => Sum~0.IN0
+Cin => C~21.IN0
+Cin => C~11.IN0
+Cin => C~4.IN0
+Cin => C~0.IN0
+Cin => B_xor[3].IN0
+Cin => B_xor[2].IN0
+Cin => B_xor[1].IN0
+Cin => B_xor[0].IN0
+Sum[0] <= Sum~0.DB_MAX_OUTPUT_PORT_TYPE
+Sum[1] <= Sum~1.DB_MAX_OUTPUT_PORT_TYPE
+Sum[2] <= Sum~2.DB_MAX_OUTPUT_PORT_TYPE
+Sum[3] <= Sum~3.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= C~22.DB_MAX_OUTPUT_PORT_TYPE
+
+

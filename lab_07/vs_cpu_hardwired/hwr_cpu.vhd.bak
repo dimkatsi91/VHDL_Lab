@@ -1,0 +1,55 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use work.hwr_cpu_pack.all;
+
+
+entity hwr_cpu is
+		port (ARout,PCout :buffer std_logic_vector(5 downto 0);
+			  DRout,ACout :buffer std_logic_vector(7 downto 0);
+			  IRout :buffer std_logic_vector(1 downto 0);
+			  dataBus :buffer std_logic_vector(7 downto 0);
+			  clock,reset :in std_logic;
+			  moP(10 downto 0));
+end hwr_cpu;
+
+
+architecture arc_hwr_cpu of hwr_cpu is
+	
+	signal ACin,MEMout :std_logic_vector(7 downto 0);	
+	
+	begin
+
+		control_unit: hardwired_logic port map(clk=>clock,InstrReg=>dataBus(7 downto 6),moP=>moP);
+				
+		
+		system_bus : data_bus port map(pc=>PCout,dr=>DRout,mem=>MEMout,PDM(2)=>moP(2),PDM(1)=>moP(1),PDM(0)=>moP(0),databus=>dataBus);
+		
+		
+		AR: paral_reg generic map(m=>6)
+					  port map(load=>moP(10),clk=>clock,clr=>reset,data=>dataBus(5 downto 0),Q=>ARout);
+					
+					
+		PC: inc_reg generic map(m=>6)
+					port map(load=>moP(9),clk=>clock,clr=>reset,inc=>moP(8),data=>dataBus(5 downto 0),Q=>PCout);
+					
+		
+		DR: paral_reg generic map(m=>8)
+					  port map(load=>moP(7),clk=>clock,clr=>reset,data=>dataBus(7 downto 0),Q=>DRout);
+					
+		
+		AC: inc_reg generic map(m=>8)
+					port map(load=>moP(6),clk=>clock,clr=>reset,inc=>moP(5),data=>ACin,Q=>ACout);
+					
+					
+		IR: paral_reg generic map(m=>2)
+					  port map(load=>moP(4),clk=>clock,clr=>reset,data=>dataBus(7 downto 6),Q=>IRout);
+					
+		
+		alu_cpu: ALU port map(DBUSout=>dataBus(7 downto 0),ACout=>ACout,ALUSEL=>moP(3),ALUout=>ACin);
+		
+		
+		external_mem: memory port map(address=>dataBus(5 downto 0),clock=>clock,q=>MEMout);
+		
+		
+end arc_hwr_cpu;
+		

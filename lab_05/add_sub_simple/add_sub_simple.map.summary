@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Dec 10 13:44:00 2015
+Quartus II 64-Bit Version : 7.2 Build 151 09/26/2007 SJ Full Version
+Revision Name : add_sub_simple
+Top-level Entity Name : add_sub_simple
+Family : Cyclone II
+Total logic elements : 33
+    Total combinational functions : 33
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 51
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

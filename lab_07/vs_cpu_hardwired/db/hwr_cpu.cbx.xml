@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="hwr_cpu">
+		<CBX_INST_ENTRY INSTANCE_NAME="|hwr_cpu|memory:external_mem|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_6j41.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

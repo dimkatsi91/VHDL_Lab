@@ -1,0 +1,679 @@
+Analysis & Synthesis report for micropr_cpu
+Mon Jan 25 18:21:55 2016
+Quartus II 64-Bit Version 7.2 Build 151 09/26/2007 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Analysis & Synthesis Source Files Read
+  5. Analysis & Synthesis Resource Usage Summary
+  6. Analysis & Synthesis Resource Utilization by Entity
+  7. Analysis & Synthesis RAM Summary
+  8. General Register Statistics
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Source assignments for mseq:microsequencer|microcode_memory:MICROCODE_MEM|altsyncram:altsyncram_component|altsyncram_l381:auto_generated
+ 11. Source assignments for memory:external_mem|altsyncram:altsyncram_component|altsyncram_6j41:auto_generated
+ 12. Parameter Settings for User Entity Instance: mseq:microsequencer|mux2to_ena:MUX_4BIT
+ 13. Parameter Settings for User Entity Instance: mseq:microsequencer|microcode_memory:MICROCODE_MEM|altsyncram:altsyncram_component
+ 14. Parameter Settings for User Entity Instance: paral_reg:AR
+ 15. Parameter Settings for User Entity Instance: inc_reg:PC
+ 16. Parameter Settings for User Entity Instance: paral_reg:DR
+ 17. Parameter Settings for User Entity Instance: inc_reg:AC
+ 18. Parameter Settings for User Entity Instance: paral_reg:IR
+ 19. Parameter Settings for User Entity Instance: ALU:ALU_box
+ 20. Parameter Settings for User Entity Instance: ALU:ALU_box|adder_t:ADD_ACTION
+ 21. Parameter Settings for User Entity Instance: ALU:ALU_box|adder_t:ADD_ACTION|fa_1bit:\G:7:FA
+ 22. Parameter Settings for User Entity Instance: ALU:ALU_box|adder_t:ADD_ACTION|fa_1bit:\G:6:FA
+ 23. Parameter Settings for User Entity Instance: ALU:ALU_box|adder_t:ADD_ACTION|fa_1bit:\G:5:FA
+ 24. Parameter Settings for User Entity Instance: ALU:ALU_box|adder_t:ADD_ACTION|fa_1bit:\G:4:FA
+ 25. Parameter Settings for User Entity Instance: ALU:ALU_box|adder_t:ADD_ACTION|fa_1bit:\G:3:FA
+ 26. Parameter Settings for User Entity Instance: ALU:ALU_box|adder_t:ADD_ACTION|fa_1bit:\G:2:FA
+ 27. Parameter Settings for User Entity Instance: ALU:ALU_box|adder_t:ADD_ACTION|fa_1bit:\G:1:FA
+ 28. Parameter Settings for User Entity Instance: ALU:ALU_box|adder_t:ADD_ACTION|fa_1bit:\G:0:FA
+ 29. Parameter Settings for User Entity Instance: ALU:ALU_box|mux2to_ena:ACTION_CHOOSE
+ 30. Parameter Settings for User Entity Instance: memory:external_mem|altsyncram:altsyncram_component
+ 31. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2007 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++------------------------------------+------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Mon Jan 25 18:21:54 2016    ;
+; Quartus II 64-Bit Version          ; 7.2 Build 151 09/26/2007 SJ Full Version ;
+; Revision Name                      ; micropr_cpu                              ;
+; Top-level Entity Name              ; micropr_cpu                              ;
+; Family                             ; Cyclone II                               ;
+; Total logic elements               ; 60                                       ;
+;     Total combinational functions  ; 60                                       ;
+;     Dedicated logic registers      ; 30                                       ;
+; Total registers                    ; 30                                       ;
+; Total pins                         ; 51                                       ;
+; Total virtual pins                 ; 0                                        ;
+; Total memory bits                  ; 768                                      ;
+; Embedded Multiplier 9-bit elements ; 0                                        ;
+; Total PLLs                         ; 0                                        ;
++------------------------------------+------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                            ;
++--------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                         ; Setting            ; Default Value      ;
++--------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                         ; EP2C35F672C6       ;                    ;
+; Top-level entity name                                                          ; micropr_cpu        ; micropr_cpu        ;
+; Family name                                                                    ; Cyclone II         ; Stratix II         ;
+; Use Generated Physical Constraints File                                        ; Off                ;                    ;
+; Use smart compilation                                                          ; Off                ; Off                ;
+; Maximum processors allowed for parallel compilation                            ; 1                  ; 1                  ;
+; Restructure Multiplexers                                                       ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                            ; Off                ; Off                ;
+; Preserve fewer node names                                                      ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                      ; Off                ; Off                ;
+; Verilog Version                                                                ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                   ; VHDL93             ; VHDL93             ;
+; State Machine Processing                                                       ; Auto               ; Auto               ;
+; Safe State Machine                                                             ; Off                ; Off                ;
+; Extract Verilog State Machines                                                 ; On                 ; On                 ;
+; Extract VHDL State Machines                                                    ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                              ; Off                ; Off                ;
+; Add Pass-Through Logic to Inferred RAMs                                        ; On                 ; On                 ;
+; Parallel Synthesis                                                             ; Off                ; Off                ;
+; DSP Block Balancing                                                            ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                             ; On                 ; On                 ;
+; Power-Up Don't Care                                                            ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                   ; Off                ; Off                ;
+; Remove Duplicate Registers                                                     ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                           ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                         ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                          ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                           ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                            ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                 ; Off                ; Off                ;
+; Optimization Technique -- Cyclone II/Cyclone III                               ; Balanced           ; Balanced           ;
+; Carry Chain Length -- Stratix/Stratix GX/Cyclone/MAX II/Cyclone II/Cyclone III ; 70                 ; 70                 ;
+; Auto Carry Chains                                                              ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                           ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                          ; Off                ; Off                ;
+; Perform gate-level register retiming                                           ; Off                ; Off                ;
+; Allow register retiming to trade off Tsu/Tco with Fmax                         ; On                 ; On                 ;
+; Auto ROM Replacement                                                           ; On                 ; On                 ;
+; Auto RAM Replacement                                                           ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                  ; On                 ; On                 ;
+; Allow Synchronous Control Signals                                              ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                         ; Off                ; Off                ;
+; Auto RAM to Logic Cell Conversion                                              ; Off                ; Off                ;
+; Auto Resource Sharing                                                          ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                             ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                             ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                  ; Off                ; Off                ;
+; Ignore translate_off and synthesis_off directives                              ; Off                ; Off                ;
+; Show Parameter Settings Tables in Synthesis Report                             ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                             ; Off                ; Off                ;
+; Retiming Meta-Stability Register Sequence Length                               ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                                   ; Normal compilation ; Normal compilation ;
+; HDL message level                                                              ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                           ; On                 ; On                 ;
+; Block Design Naming                                                            ; Auto               ; Auto               ;
++--------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                        ;
++----------------------------------+-----------------+----------------------------------+-----------------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                        ; File Name with Absolute Path                                          ;
++----------------------------------+-----------------+----------------------------------+-----------------------------------------------------------------------+
+; mseq.vhd                         ; yes             ; User VHDL File                   ; D:/Quartus_Tests/askisi_7/vs_cpu_micropr_logic/mseq.vhd               ;
+; adder_t.vhd                      ; yes             ; User VHDL File                   ; D:/Quartus_Tests/askisi_7/vs_cpu_micropr_logic/adder_t.vhd            ;
+; ALU.vhd                          ; yes             ; User VHDL File                   ; D:/Quartus_Tests/askisi_7/vs_cpu_micropr_logic/ALU.vhd                ;
+; data_bus.vhd                     ; yes             ; User VHDL File                   ; D:/Quartus_Tests/askisi_7/vs_cpu_micropr_logic/data_bus.vhd           ;
+; inc_reg.vhd                      ; yes             ; User VHDL File                   ; D:/Quartus_Tests/askisi_7/vs_cpu_micropr_logic/inc_reg.vhd            ;
+; memory.vhd                       ; yes             ; User VHDL File                   ; D:/Quartus_Tests/askisi_7/vs_cpu_micropr_logic/memory.vhd             ;
+; microcode_memory.vhd             ; yes             ; User VHDL File                   ; D:/Quartus_Tests/askisi_7/vs_cpu_micropr_logic/microcode_memory.vhd   ;
+; micropr_cpu_pack.vhd             ; yes             ; User VHDL File                   ; D:/Quartus_Tests/askisi_7/vs_cpu_micropr_logic/micropr_cpu_pack.vhd   ;
+; micropr_cpu.vhd                  ; yes             ; User VHDL File                   ; D:/Quartus_Tests/askisi_7/vs_cpu_micropr_logic/micropr_cpu.vhd        ;
+; mux2to_ena.vhd                   ; yes             ; User VHDL File                   ; D:/Quartus_Tests/askisi_7/vs_cpu_micropr_logic/mux2to_ena.vhd         ;
+; paral_reg.vhd                    ; yes             ; User VHDL File                   ; D:/Quartus_Tests/askisi_7/vs_cpu_micropr_logic/paral_reg.vhd          ;
+; microcode.mif                    ; yes             ; User Memory Initialization File  ; D:/Quartus_Tests/askisi_7/vs_cpu_micropr_logic/microcode.mif          ;
+; external_mem.mif                 ; yes             ; User Memory Initialization File  ; D:/Quartus_Tests/askisi_7/vs_cpu_micropr_logic/external_mem.mif       ;
+; altsyncram.tdf                   ; yes             ; Megafunction                     ; c:/altera/72/quartus/libraries/megafunctions/altsyncram.tdf           ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                     ; c:/altera/72/quartus/libraries/megafunctions/stratix_ram_block.inc    ;
+; lpm_mux.inc                      ; yes             ; Megafunction                     ; c:/altera/72/quartus/libraries/megafunctions/lpm_mux.inc              ;
+; lpm_decode.inc                   ; yes             ; Megafunction                     ; c:/altera/72/quartus/libraries/megafunctions/lpm_decode.inc           ;
+; aglobal72.inc                    ; yes             ; Megafunction                     ; c:/altera/72/quartus/libraries/megafunctions/aglobal72.inc            ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                     ; c:/altera/72/quartus/libraries/megafunctions/a_rdenreg.inc            ;
+; altrom.inc                       ; yes             ; Megafunction                     ; c:/altera/72/quartus/libraries/megafunctions/altrom.inc               ;
+; altram.inc                       ; yes             ; Megafunction                     ; c:/altera/72/quartus/libraries/megafunctions/altram.inc               ;
+; altdpram.inc                     ; yes             ; Megafunction                     ; c:/altera/72/quartus/libraries/megafunctions/altdpram.inc             ;
+; altqpram.inc                     ; yes             ; Megafunction                     ; c:/altera/72/quartus/libraries/megafunctions/altqpram.inc             ;
+; db/altsyncram_l381.tdf           ; yes             ; Auto-Generated Megafunction      ; D:/Quartus_Tests/askisi_7/vs_cpu_micropr_logic/db/altsyncram_l381.tdf ;
+; db/altsyncram_6j41.tdf           ; yes             ; Auto-Generated Megafunction      ; D:/Quartus_Tests/askisi_7/vs_cpu_micropr_logic/db/altsyncram_6j41.tdf ;
++----------------------------------+-----------------+----------------------------------+-----------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Estimated Total logic elements              ; 60    ;
+;                                             ;       ;
+; Total combinational functions               ; 60    ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 27    ;
+;     -- 3 input functions                    ; 16    ;
+;     -- <=2 input functions                  ; 17    ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 48    ;
+;     -- arithmetic mode                      ; 12    ;
+;                                             ;       ;
+; Total registers                             ; 30    ;
+;     -- Dedicated logic registers            ; 30    ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 51    ;
+; Total memory bits                           ; 768   ;
+; Maximum fan-out node                        ; clock ;
+; Maximum fan-out                             ; 54    ;
+; Total fan-out                               ; 515   ;
+; Average fan-out                             ; 3.12  ;
++---------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                      ;
++----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                            ; Library Name ;
++----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------+--------------+
+; |micropr_cpu                                 ; 60 (0)            ; 30 (0)       ; 768         ; 0            ; 0       ; 0         ; 51   ; 0            ; |micropr_cpu                                                                                                                   ; work         ;
+;    |ALU:ALU_box|                             ; 9 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |micropr_cpu|ALU:ALU_box                                                                                                       ; work         ;
+;       |adder_t:ADD_ACTION|                   ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |micropr_cpu|ALU:ALU_box|adder_t:ADD_ACTION                                                                                    ; work         ;
+;          |fa_1bit:\G:1:FA|                   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |micropr_cpu|ALU:ALU_box|adder_t:ADD_ACTION|fa_1bit:\G:1:FA                                                                    ; work         ;
+;          |fa_1bit:\G:2:FA|                   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |micropr_cpu|ALU:ALU_box|adder_t:ADD_ACTION|fa_1bit:\G:2:FA                                                                    ; work         ;
+;          |fa_1bit:\G:3:FA|                   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |micropr_cpu|ALU:ALU_box|adder_t:ADD_ACTION|fa_1bit:\G:3:FA                                                                    ; work         ;
+;          |fa_1bit:\G:4:FA|                   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |micropr_cpu|ALU:ALU_box|adder_t:ADD_ACTION|fa_1bit:\G:4:FA                                                                    ; work         ;
+;          |fa_1bit:\G:5:FA|                   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |micropr_cpu|ALU:ALU_box|adder_t:ADD_ACTION|fa_1bit:\G:5:FA                                                                    ; work         ;
+;          |fa_1bit:\G:6:FA|                   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |micropr_cpu|ALU:ALU_box|adder_t:ADD_ACTION|fa_1bit:\G:6:FA                                                                    ; work         ;
+;    |data_bus:Dbus|                           ; 25 (25)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |micropr_cpu|data_bus:Dbus                                                                                                     ; work         ;
+;    |inc_reg:AC|                              ; 16 (16)           ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |micropr_cpu|inc_reg:AC                                                                                                        ; work         ;
+;    |inc_reg:PC|                              ; 6 (6)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |micropr_cpu|inc_reg:PC                                                                                                        ; work         ;
+;    |memory:external_mem|                     ; 0 (0)             ; 0 (0)        ; 512         ; 0            ; 0       ; 0         ; 0    ; 0            ; |micropr_cpu|memory:external_mem                                                                                               ; work         ;
+;       |altsyncram:altsyncram_component|      ; 0 (0)             ; 0 (0)        ; 512         ; 0            ; 0       ; 0         ; 0    ; 0            ; |micropr_cpu|memory:external_mem|altsyncram:altsyncram_component                                                               ; work         ;
+;          |altsyncram_6j41:auto_generated|    ; 0 (0)             ; 0 (0)        ; 512         ; 0            ; 0       ; 0         ; 0    ; 0            ; |micropr_cpu|memory:external_mem|altsyncram:altsyncram_component|altsyncram_6j41:auto_generated                                ; work         ;
+;    |mseq:microsequencer|                     ; 4 (0)             ; 0 (0)        ; 256         ; 0            ; 0       ; 0         ; 0    ; 0            ; |micropr_cpu|mseq:microsequencer                                                                                               ; work         ;
+;       |microcode_memory:MICROCODE_MEM|       ; 0 (0)             ; 0 (0)        ; 256         ; 0            ; 0       ; 0         ; 0    ; 0            ; |micropr_cpu|mseq:microsequencer|microcode_memory:MICROCODE_MEM                                                                ; work         ;
+;          |altsyncram:altsyncram_component|   ; 0 (0)             ; 0 (0)        ; 256         ; 0            ; 0       ; 0         ; 0    ; 0            ; |micropr_cpu|mseq:microsequencer|microcode_memory:MICROCODE_MEM|altsyncram:altsyncram_component                                ; work         ;
+;             |altsyncram_l381:auto_generated| ; 0 (0)             ; 0 (0)        ; 256         ; 0            ; 0       ; 0         ; 0    ; 0            ; |micropr_cpu|mseq:microsequencer|microcode_memory:MICROCODE_MEM|altsyncram:altsyncram_component|altsyncram_l381:auto_generated ; work         ;
+;       |mux2to_ena:MUX_4BIT|                  ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |micropr_cpu|mseq:microsequencer|mux2to_ena:MUX_4BIT                                                                           ; work         ;
+;    |paral_reg:AR|                            ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |micropr_cpu|paral_reg:AR                                                                                                      ; work         ;
+;    |paral_reg:DR|                            ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |micropr_cpu|paral_reg:DR                                                                                                      ; work         ;
+;    |paral_reg:IR|                            ; 0 (0)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |micropr_cpu|paral_reg:IR                                                                                                      ; work         ;
++----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                                                 ;
++------------------------------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+------------------+
+; Name                                                                                                                         ; Type ; Mode ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF              ;
++------------------------------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+------------------+
+; memory:external_mem|altsyncram:altsyncram_component|altsyncram_6j41:auto_generated|ALTSYNCRAM                                ; AUTO ; ROM  ; 64           ; 8            ; --           ; --           ; 512  ; external_mem.mif ;
+; mseq:microsequencer|microcode_memory:MICROCODE_MEM|altsyncram:altsyncram_component|altsyncram_l381:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 16           ; 16           ; --           ; --           ; 256  ; microcode.mif    ;
++------------------------------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 30    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 14    ;
+; Number of registers using Asynchronous Clear ; 30    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 16    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------+
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |micropr_cpu|inc_reg:AC|Q[0] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for mseq:microsequencer|microcode_memory:MICROCODE_MEM|altsyncram:altsyncram_component|altsyncram_l381:auto_generated ;
++---------------------------------+--------------------+------+----------------------------------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                                         ;
++---------------------------------+--------------------+------+----------------------------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                                          ;
++---------------------------------+--------------------+------+----------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Source assignments for memory:external_mem|altsyncram:altsyncram_component|altsyncram_6j41:auto_generated ;
++---------------------------------+--------------------+------+---------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                          ;
++---------------------------------+--------------------+------+---------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                           ;
++---------------------------------+--------------------+------+---------------------------------------------+
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mseq:microsequencer|mux2to_ena:MUX_4BIT ;
++----------------+-------+-------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                        ;
++----------------+-------+-------------------------------------------------------------+
+; w              ; 4     ; Signed Integer                                              ;
++----------------+-------+-------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mseq:microsequencer|microcode_memory:MICROCODE_MEM|altsyncram:altsyncram_component ;
++------------------------------------+----------------------+---------------------------------------------------------------------+
+; Parameter Name                     ; Value                ; Type                                                                ;
++------------------------------------+----------------------+---------------------------------------------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                                                             ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                                                          ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                                                        ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                                                        ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                                                      ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                                                             ;
+; OPERATION_MODE                     ; ROM                  ; Untyped                                                             ;
+; WIDTH_A                            ; 16                   ; Signed Integer                                                      ;
+; WIDTHAD_A                          ; 4                    ; Signed Integer                                                      ;
+; NUMWORDS_A                         ; 16                   ; Signed Integer                                                      ;
+; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                                                             ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                                                             ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                                                             ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                                                             ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                                                             ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                                                             ;
+; WIDTH_B                            ; 1                    ; Untyped                                                             ;
+; WIDTHAD_B                          ; 1                    ; Untyped                                                             ;
+; NUMWORDS_B                         ; 1                    ; Untyped                                                             ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped                                                             ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                                                             ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                                                             ;
+; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                                                             ;
+; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                                                             ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                                                             ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                                                             ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                                                             ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                                                             ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                                                             ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                                                             ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                                                             ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer                                                      ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                                                             ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                                                             ;
+; BYTE_SIZE                          ; 8                    ; Untyped                                                             ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                                                             ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                                                             ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                                                             ;
+; INIT_FILE                          ; microcode.mif        ; Untyped                                                             ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                                                             ;
+; MAXIMUM_DEPTH                      ; 0                    ; Untyped                                                             ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                                                             ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                                                             ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS               ; Untyped                                                             ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                                                             ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                                                             ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                                                             ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                                                             ;
+; DEVICE_FAMILY                      ; Cyclone II           ; Untyped                                                             ;
+; CBXI_PARAMETER                     ; altsyncram_l381      ; Untyped                                                             ;
++------------------------------------+----------------------+---------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: paral_reg:AR ;
++----------------+-------+----------------------------------+
+; Parameter Name ; Value ; Type                             ;
++----------------+-------+----------------------------------+
+; m              ; 6     ; Signed Integer                   ;
++----------------+-------+----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------+
+; Parameter Settings for User Entity Instance: inc_reg:PC ;
++----------------+-------+--------------------------------+
+; Parameter Name ; Value ; Type                           ;
++----------------+-------+--------------------------------+
+; m              ; 6     ; Signed Integer                 ;
++----------------+-------+--------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: paral_reg:DR ;
++----------------+-------+----------------------------------+
+; Parameter Name ; Value ; Type                             ;
++----------------+-------+----------------------------------+
+; m              ; 8     ; Signed Integer                   ;
++----------------+-------+----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------+
+; Parameter Settings for User Entity Instance: inc_reg:AC ;
++----------------+-------+--------------------------------+
+; Parameter Name ; Value ; Type                           ;
++----------------+-------+--------------------------------+
+; m              ; 8     ; Signed Integer                 ;
++----------------+-------+--------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: paral_reg:IR ;
++----------------+-------+----------------------------------+
+; Parameter Name ; Value ; Type                             ;
++----------------+-------+----------------------------------+
+; m              ; 2     ; Signed Integer                   ;
++----------------+-------+----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ALU:ALU_box ;
++----------------+-------+---------------------------------+
+; Parameter Name ; Value ; Type                            ;
++----------------+-------+---------------------------------+
+; m              ; 8     ; Signed Integer                  ;
++----------------+-------+---------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ALU:ALU_box|adder_t:ADD_ACTION ;
++----------------+-------+----------------------------------------------------+
+; Parameter Name ; Value ; Type                                               ;
++----------------+-------+----------------------------------------------------+
+; n              ; 8     ; Signed Integer                                     ;
++----------------+-------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ALU:ALU_box|adder_t:ADD_ACTION|fa_1bit:\G:7:FA ;
++----------------+-------+--------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                               ;
++----------------+-------+--------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                     ;
++----------------+-------+--------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ALU:ALU_box|adder_t:ADD_ACTION|fa_1bit:\G:6:FA ;
++----------------+-------+--------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                               ;
++----------------+-------+--------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                     ;
++----------------+-------+--------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ALU:ALU_box|adder_t:ADD_ACTION|fa_1bit:\G:5:FA ;
++----------------+-------+--------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                               ;
++----------------+-------+--------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                     ;
++----------------+-------+--------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ALU:ALU_box|adder_t:ADD_ACTION|fa_1bit:\G:4:FA ;
++----------------+-------+--------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                               ;
++----------------+-------+--------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                     ;
++----------------+-------+--------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ALU:ALU_box|adder_t:ADD_ACTION|fa_1bit:\G:3:FA ;
++----------------+-------+--------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                               ;
++----------------+-------+--------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                     ;
++----------------+-------+--------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ALU:ALU_box|adder_t:ADD_ACTION|fa_1bit:\G:2:FA ;
++----------------+-------+--------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                               ;
++----------------+-------+--------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                     ;
++----------------+-------+--------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ALU:ALU_box|adder_t:ADD_ACTION|fa_1bit:\G:1:FA ;
++----------------+-------+--------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                               ;
++----------------+-------+--------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                     ;
++----------------+-------+--------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ALU:ALU_box|adder_t:ADD_ACTION|fa_1bit:\G:0:FA ;
++----------------+-------+--------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                               ;
++----------------+-------+--------------------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                                     ;
++----------------+-------+--------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ALU:ALU_box|mux2to_ena:ACTION_CHOOSE ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; w              ; 8     ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: memory:external_mem|altsyncram:altsyncram_component ;
++------------------------------------+----------------------+--------------------------------------+
+; Parameter Name                     ; Value                ; Type                                 ;
++------------------------------------+----------------------+--------------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                              ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                           ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                         ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                         ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                       ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                              ;
+; OPERATION_MODE                     ; ROM                  ; Untyped                              ;
+; WIDTH_A                            ; 8                    ; Signed Integer                       ;
+; WIDTHAD_A                          ; 6                    ; Signed Integer                       ;
+; NUMWORDS_A                         ; 64                   ; Signed Integer                       ;
+; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                              ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                              ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                              ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                              ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                              ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                              ;
+; WIDTH_B                            ; 1                    ; Untyped                              ;
+; WIDTHAD_B                          ; 1                    ; Untyped                              ;
+; NUMWORDS_B                         ; 1                    ; Untyped                              ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped                              ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                              ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                              ;
+; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                              ;
+; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                              ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                              ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                              ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                              ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                              ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                              ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                              ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                              ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer                       ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                              ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                              ;
+; BYTE_SIZE                          ; 8                    ; Untyped                              ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                              ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                              ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                              ;
+; INIT_FILE                          ; external_mem.mif     ; Untyped                              ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                              ;
+; MAXIMUM_DEPTH                      ; 0                    ; Untyped                              ;
+; CLOCK_ENABLE_INPUT_A               ; NORMAL               ; Untyped                              ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                              ;
+; CLOCK_ENABLE_OUTPUT_A              ; NORMAL               ; Untyped                              ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                              ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                              ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                              ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                              ;
+; DEVICE_FAMILY                      ; Cyclone II           ; Untyped                              ;
+; CBXI_PARAMETER                     ; altsyncram_6j41      ; Untyped                              ;
++------------------------------------+----------------------+--------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 7.2 Build 151 09/26/2007 SJ Full Version
+    Info: Processing started: Mon Jan 25 18:21:22 2016
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off micropr_cpu -c micropr_cpu
+Info: Found 3 design units, including 1 entities, in source file mseq.vhd
+    Info: Found design unit 1: mseq_pkg
+    Info: Found design unit 2: mseq-bhv
+    Info: Found entity 1: mseq
+Info: Found 4 design units, including 2 entities, in source file adder_t.vhd
+    Info: Found design unit 1: fa_1bit-fa_arc
+    Info: Found design unit 2: adder_t-arc
+    Info: Found entity 1: fa_1bit
+    Info: Found entity 2: adder_t
+Info: Found 3 design units, including 1 entities, in source file ALU.vhd
+    Info: Found design unit 1: alu_pack
+    Info: Found design unit 2: ALU-rtl
+    Info: Found entity 1: ALU
+Info: Found 2 design units, including 1 entities, in source file data_bus.vhd
+    Info: Found design unit 1: data_bus-arc_bus
+    Info: Found entity 1: data_bus
+Info: Found 2 design units, including 1 entities, in source file inc_reg.vhd
+    Info: Found design unit 1: inc_reg-arc_inc_reg
+    Info: Found entity 1: inc_reg
+Info: Found 2 design units, including 1 entities, in source file memory.vhd
+    Info: Found design unit 1: memory-SYN
+    Info: Found entity 1: memory
+Info: Found 2 design units, including 1 entities, in source file microcode_memory.vhd
+    Info: Found design unit 1: microcode_memory-SYN
+    Info: Found entity 1: microcode_memory
+Info: Found 1 design units, including 0 entities, in source file micropr_cpu_pack.vhd
+    Info: Found design unit 1: micro_cpu
+Info: Found 2 design units, including 1 entities, in source file micropr_cpu.vhd
+    Info: Found design unit 1: micropr_cpu-arc_micro_cpu
+    Info: Found entity 1: micropr_cpu
+Info: Found 2 design units, including 1 entities, in source file mux2to_ena.vhd
+    Info: Found design unit 1: mux2to_ena-arc
+    Info: Found entity 1: mux2to_ena
+Info: Found 2 design units, including 1 entities, in source file paral_reg.vhd
+    Info: Found design unit 1: paral_reg-arc_reg
+    Info: Found entity 1: paral_reg
+Info: Elaborating entity "micropr_cpu" for the top level hierarchy
+Info: Elaborating entity "mseq" for hierarchy "mseq:microsequencer"
+Info: Elaborating entity "mux2to_ena" for hierarchy "mseq:microsequencer|mux2to_ena:MUX_4BIT"
+Info: Elaborating entity "microcode_memory" for hierarchy "mseq:microsequencer|microcode_memory:MICROCODE_MEM"
+Info: Found 1 design units, including 1 entities, in source file c:/altera/72/quartus/libraries/megafunctions/altsyncram.tdf
+    Info: Found entity 1: altsyncram
+Info: Elaborating entity "altsyncram" for hierarchy "mseq:microsequencer|microcode_memory:MICROCODE_MEM|altsyncram:altsyncram_component"
+Info: Elaborated megafunction instantiation "mseq:microsequencer|microcode_memory:MICROCODE_MEM|altsyncram:altsyncram_component"
+Info: Found 1 design units, including 1 entities, in source file db/altsyncram_l381.tdf
+    Info: Found entity 1: altsyncram_l381
+Info: Elaborating entity "altsyncram_l381" for hierarchy "mseq:microsequencer|microcode_memory:MICROCODE_MEM|altsyncram:altsyncram_component|altsyncram_l381:auto_generated"
+Warning: 7 out of 16 addresses uninitialized. Initializing them to "0". 3 warnings found. Reporting 3.
+    Warning: Address range from 3 to 7 are not initialized. 
+    Warning: Address 13 is not initialized. 
+    Warning: Address 15 is not initialized. 
+Info: Elaborating entity "data_bus" for hierarchy "data_bus:Dbus"
+Info: Elaborating entity "paral_reg" for hierarchy "paral_reg:AR"
+Info: Elaborating entity "inc_reg" for hierarchy "inc_reg:PC"
+Info: Elaborating entity "paral_reg" for hierarchy "paral_reg:DR"
+Info: Elaborating entity "inc_reg" for hierarchy "inc_reg:AC"
+Info: Elaborating entity "paral_reg" for hierarchy "paral_reg:IR"
+Info: Elaborating entity "ALU" for hierarchy "ALU:ALU_box"
+Info: Elaborating entity "adder_t" for hierarchy "ALU:ALU_box|adder_t:ADD_ACTION"
+Info: Elaborating entity "fa_1bit" for hierarchy "ALU:ALU_box|adder_t:ADD_ACTION|fa_1bit:\G:7:FA"
+Info: Elaborating entity "mux2to_ena" for hierarchy "ALU:ALU_box|mux2to_ena:ACTION_CHOOSE"
+Info: Elaborating entity "memory" for hierarchy "memory:external_mem"
+Info: Elaborating entity "altsyncram" for hierarchy "memory:external_mem|altsyncram:altsyncram_component"
+Info: Elaborated megafunction instantiation "memory:external_mem|altsyncram:altsyncram_component"
+Info: Found 1 design units, including 1 entities, in source file db/altsyncram_6j41.tdf
+    Info: Found entity 1: altsyncram_6j41
+Info: Elaborating entity "altsyncram_6j41" for hierarchy "memory:external_mem|altsyncram:altsyncram_component|altsyncram_6j41:auto_generated"
+Warning: 58 out of 64 addresses uninitialized. Initializing them to "0". 1 warnings found. Reporting 1.
+    Warning: Address range from 6 to 63 are not initialized. 
+Warning: Converting TRI node "data_bus:Dbus|databus[0]~34" that feeds logic to an OR gate
+Warning: Converting TRI node "data_bus:Dbus|databus[1]~40" that feeds logic to an OR gate
+Warning: Converting TRI node "data_bus:Dbus|databus[2]~46" that feeds logic to an OR gate
+Warning: Converting TRI node "data_bus:Dbus|databus[3]~52" that feeds logic to an OR gate
+Warning: Converting TRI node "data_bus:Dbus|databus[4]~58" that feeds logic to an OR gate
+Warning: Converting TRI node "data_bus:Dbus|databus[5]~64" that feeds logic to an OR gate
+Warning: Converting TRI node "data_bus:Dbus|databus[6]~70" that feeds logic to an OR gate
+Warning: Converting TRI node "data_bus:Dbus|databus[7]~75" that feeds logic to an OR gate
+Info: Implemented 151 device resources after synthesis - the final resource count might be different
+    Info: Implemented 2 input pins
+    Info: Implemented 49 output pins
+    Info: Implemented 76 logic cells
+    Info: Implemented 24 RAM segments
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 14 warnings
+    Info: Allocated 321 megabytes of memory during processing
+    Info: Processing ended: Mon Jan 25 18:21:55 2016
+    Info: Elapsed time: 00:00:33
+
+

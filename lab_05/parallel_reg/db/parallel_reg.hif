@@ -1,0 +1,112 @@
+Version 7.2 Build 151 09/26/2007 SJ Full Version
+11
+1011
+OFF
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Partition --
+-- End Partition --
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+parallel_reg
+# storage
+db|parallel_reg.(0).cnf
+db|parallel_reg.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+parallel_reg.vhd
+66449fce6c2243ad609a8449d88ddc55
+4
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+n
+16
+PARAMETER_SIGNED_DEC
+DEF
+}
+# hierarchies {
+|
+}
+# lmf
+c:|altera|72|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+D_FF
+# storage
+db|parallel_reg.(1).cnf
+db|parallel_reg.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+parallel_reg.vhd
+66449fce6c2243ad609a8449d88ddc55
+4
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+D_FF:\F:0:DFF
+D_FF:\F:1:DFF
+D_FF:\F:2:DFF
+D_FF:\F:3:DFF
+D_FF:\F:4:DFF
+D_FF:\F:5:DFF
+D_FF:\F:6:DFF
+D_FF:\F:7:DFF
+D_FF:\F:8:DFF
+D_FF:\F:9:DFF
+D_FF:\F:10:DFF
+D_FF:\F:11:DFF
+D_FF:\F:12:DFF
+D_FF:\F:13:DFF
+D_FF:\F:14:DFF
+D_FF:\F:15:DFF
+}
+# lmf
+c:|altera|72|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# complete
+

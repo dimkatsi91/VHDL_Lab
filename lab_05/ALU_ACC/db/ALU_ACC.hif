@@ -1,0 +1,327 @@
+Version 7.2 Build 151 09/26/2007 SJ Full Version
+11
+1009
+OFF
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Partition --
+-- End Partition --
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+mux_4_to_1_16_bits
+# storage
+db|ALU_ACC.(3).cnf
+db|ALU_ACC.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+..|mux_4_to_1_16_bits|mux_4_to_1_16_bits.vhd
+9a6b3aaa3050b3255180c4955c9e56
+4
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+n
+16
+PARAMETER_SIGNED_DEC
+USR
+ constraint(i0)
+15 downto 0
+PARAMETER_STRING
+USR
+ constraint(i1)
+15 downto 0
+PARAMETER_STRING
+USR
+ constraint(i2)
+15 downto 0
+PARAMETER_STRING
+USR
+ constraint(i3)
+15 downto 0
+PARAMETER_STRING
+USR
+ constraint(sel)
+1 downto 0
+PARAMETER_STRING
+USR
+ constraint(mux_out)
+15 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+mux_4_to_1_16_bits:MUXX
+}
+# lmf
+c:|altera|72|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+parallel_reg
+# storage
+db|ALU_ACC.(4).cnf
+db|ALU_ACC.(4).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+..|parallel_reg|parallel_reg.vhd
+66449fce6c2243ad609a8449d88ddc55
+4
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+n
+16
+PARAMETER_SIGNED_DEC
+USR
+ constraint(data)
+15 downto 0
+PARAMETER_STRING
+USR
+ constraint(q)
+15 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+parallel_reg:ACC
+}
+# lmf
+c:|altera|72|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+D_FF
+# storage
+db|ALU_ACC.(5).cnf
+db|ALU_ACC.(5).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+..|parallel_reg|parallel_reg.vhd
+66449fce6c2243ad609a8449d88ddc55
+4
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+parallel_reg:ACC|D_FF:\F:0:DFF
+parallel_reg:ACC|D_FF:\F:1:DFF
+parallel_reg:ACC|D_FF:\F:2:DFF
+parallel_reg:ACC|D_FF:\F:3:DFF
+parallel_reg:ACC|D_FF:\F:4:DFF
+parallel_reg:ACC|D_FF:\F:5:DFF
+parallel_reg:ACC|D_FF:\F:6:DFF
+parallel_reg:ACC|D_FF:\F:7:DFF
+parallel_reg:ACC|D_FF:\F:8:DFF
+parallel_reg:ACC|D_FF:\F:9:DFF
+parallel_reg:ACC|D_FF:\F:10:DFF
+parallel_reg:ACC|D_FF:\F:11:DFF
+parallel_reg:ACC|D_FF:\F:12:DFF
+parallel_reg:ACC|D_FF:\F:13:DFF
+parallel_reg:ACC|D_FF:\F:14:DFF
+parallel_reg:ACC|D_FF:\F:15:DFF
+}
+# lmf
+c:|altera|72|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+ALU_ACC
+# storage
+db|ALU_ACC.(0).cnf
+db|ALU_ACC.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+ALU_ACC.vhd
+aa61b45598bfc32674f5b9a22c94c2f8
+4
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+m
+16
+PARAMETER_SIGNED_DEC
+DEF
+}
+# hierarchies {
+|
+}
+# lmf
+c:|altera|72|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+carry_look_ahead
+# storage
+db|ALU_ACC.(2).cnf
+db|ALU_ACC.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+..|carry_look_ahead|carry_look_ahead.vhd
+8b8ec41a40c1ce7570458450e8a2bff5
+4
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+n
+4
+PARAMETER_SIGNED_DEC
+USR
+ constraint(a)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(b)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(sum)
+3 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+look_ahead_16bits:ADD_SUB_ACTION|carry_look_ahead:CLA0
+look_ahead_16bits:ADD_SUB_ACTION|carry_look_ahead:CLA1
+look_ahead_16bits:ADD_SUB_ACTION|carry_look_ahead:CLA2
+look_ahead_16bits:ADD_SUB_ACTION|carry_look_ahead:CLA3
+}
+# lmf
+c:|altera|72|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+look_ahead_16bits
+# storage
+db|ALU_ACC.(1).cnf
+db|ALU_ACC.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+..|look_ahead_16bits|look_ahead_16bits.vhd
+afdb5bffd6538d3af12b64da28236c2
+4
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+m
+16
+PARAMETER_SIGNED_DEC
+USR
+ constraint(a)
+15 downto 0
+PARAMETER_STRING
+USR
+ constraint(b)
+15 downto 0
+PARAMETER_STRING
+USR
+ constraint(s)
+15 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+look_ahead_16bits:ADD_SUB_ACTION
+}
+# lmf
+c:|altera|72|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# complete
+

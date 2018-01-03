@@ -1,0 +1,246 @@
+|add_sub_simple
+A[0] => fa_1bit:G:0:FA.a
+A[1] => fa_1bit:G:1:FA.a
+A[2] => fa_1bit:G:2:FA.a
+A[3] => fa_1bit:G:3:FA.a
+A[4] => fa_1bit:G:4:FA.a
+A[5] => fa_1bit:G:5:FA.a
+A[6] => fa_1bit:G:6:FA.a
+A[7] => fa_1bit:G:7:FA.a
+A[8] => fa_1bit:G:8:FA.a
+A[9] => fa_1bit:G:9:FA.a
+A[10] => fa_1bit:G:10:FA.a
+A[11] => fa_1bit:G:11:FA.a
+A[12] => fa_1bit:G:12:FA.a
+A[13] => fa_1bit:G:13:FA.a
+A[14] => fa_1bit:G:14:FA.a
+A[15] => fa_1bit:G:15:FA.a
+B[0] => X[0].IN1
+B[1] => X[1].IN1
+B[2] => X[2].IN1
+B[3] => X[3].IN1
+B[4] => X[4].IN1
+B[5] => X[5].IN1
+B[6] => X[6].IN1
+B[7] => X[7].IN1
+B[8] => X[8].IN1
+B[9] => X[9].IN1
+B[10] => X[10].IN1
+B[11] => X[11].IN1
+B[12] => X[12].IN1
+B[13] => X[13].IN1
+B[14] => X[14].IN1
+B[15] => X[15].IN0
+Cin => fa_1bit:G:0:FA.c
+Cin => X[0].IN0
+Cin => X[1].IN0
+Cin => X[2].IN0
+Cin => X[3].IN0
+Cin => X[4].IN0
+Cin => X[5].IN0
+Cin => X[6].IN0
+Cin => X[7].IN0
+Cin => X[8].IN0
+Cin => X[9].IN0
+Cin => X[10].IN0
+Cin => X[11].IN0
+Cin => X[12].IN0
+Cin => X[13].IN0
+Cin => X[14].IN0
+Cin => X[15].IN1
+Sum[0] <= fa_1bit:G:0:FA.sum
+Sum[1] <= fa_1bit:G:1:FA.sum
+Sum[2] <= fa_1bit:G:2:FA.sum
+Sum[3] <= fa_1bit:G:3:FA.sum
+Sum[4] <= fa_1bit:G:4:FA.sum
+Sum[5] <= fa_1bit:G:5:FA.sum
+Sum[6] <= fa_1bit:G:6:FA.sum
+Sum[7] <= fa_1bit:G:7:FA.sum
+Sum[8] <= fa_1bit:G:8:FA.sum
+Sum[9] <= fa_1bit:G:9:FA.sum
+Sum[10] <= fa_1bit:G:10:FA.sum
+Sum[11] <= fa_1bit:G:11:FA.sum
+Sum[12] <= fa_1bit:G:12:FA.sum
+Sum[13] <= fa_1bit:G:13:FA.sum
+Sum[14] <= fa_1bit:G:14:FA.sum
+Sum[15] <= fa_1bit:G:15:FA.sum
+Cout <= fa_1bit:G:15:FA.cout
+ov <= ov~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|add_sub_simple|fa_1bit:\G:15:FA
+a => cout~1.IN0
+a => sum~0.IN0
+b => cout~1.IN1
+b => sum~0.IN1
+c => cout~0.IN1
+c => sum~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|add_sub_simple|fa_1bit:\G:14:FA
+a => cout~1.IN0
+a => sum~0.IN0
+b => cout~1.IN1
+b => sum~0.IN1
+c => cout~0.IN1
+c => sum~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|add_sub_simple|fa_1bit:\G:13:FA
+a => cout~1.IN0
+a => sum~0.IN0
+b => cout~1.IN1
+b => sum~0.IN1
+c => cout~0.IN1
+c => sum~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|add_sub_simple|fa_1bit:\G:12:FA
+a => cout~1.IN0
+a => sum~0.IN0
+b => cout~1.IN1
+b => sum~0.IN1
+c => cout~0.IN1
+c => sum~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|add_sub_simple|fa_1bit:\G:11:FA
+a => cout~1.IN0
+a => sum~0.IN0
+b => cout~1.IN1
+b => sum~0.IN1
+c => cout~0.IN1
+c => sum~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|add_sub_simple|fa_1bit:\G:10:FA
+a => cout~1.IN0
+a => sum~0.IN0
+b => cout~1.IN1
+b => sum~0.IN1
+c => cout~0.IN1
+c => sum~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|add_sub_simple|fa_1bit:\G:9:FA
+a => cout~1.IN0
+a => sum~0.IN0
+b => cout~1.IN1
+b => sum~0.IN1
+c => cout~0.IN1
+c => sum~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|add_sub_simple|fa_1bit:\G:8:FA
+a => cout~1.IN0
+a => sum~0.IN0
+b => cout~1.IN1
+b => sum~0.IN1
+c => cout~0.IN1
+c => sum~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|add_sub_simple|fa_1bit:\G:7:FA
+a => cout~1.IN0
+a => sum~0.IN0
+b => cout~1.IN1
+b => sum~0.IN1
+c => cout~0.IN1
+c => sum~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|add_sub_simple|fa_1bit:\G:6:FA
+a => cout~1.IN0
+a => sum~0.IN0
+b => cout~1.IN1
+b => sum~0.IN1
+c => cout~0.IN1
+c => sum~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|add_sub_simple|fa_1bit:\G:5:FA
+a => cout~1.IN0
+a => sum~0.IN0
+b => cout~1.IN1
+b => sum~0.IN1
+c => cout~0.IN1
+c => sum~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|add_sub_simple|fa_1bit:\G:4:FA
+a => cout~1.IN0
+a => sum~0.IN0
+b => cout~1.IN1
+b => sum~0.IN1
+c => cout~0.IN1
+c => sum~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|add_sub_simple|fa_1bit:\G:3:FA
+a => cout~1.IN0
+a => sum~0.IN0
+b => cout~1.IN1
+b => sum~0.IN1
+c => cout~0.IN1
+c => sum~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|add_sub_simple|fa_1bit:\G:2:FA
+a => cout~1.IN0
+a => sum~0.IN0
+b => cout~1.IN1
+b => sum~0.IN1
+c => cout~0.IN1
+c => sum~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|add_sub_simple|fa_1bit:\G:1:FA
+a => cout~1.IN0
+a => sum~0.IN0
+b => cout~1.IN1
+b => sum~0.IN1
+c => cout~0.IN1
+c => sum~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|add_sub_simple|fa_1bit:\G:0:FA
+a => cout~1.IN0
+a => sum~0.IN0
+b => cout~1.IN1
+b => sum~0.IN1
+c => cout~0.IN1
+c => sum~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout~2.DB_MAX_OUTPUT_PORT_TYPE
+
+

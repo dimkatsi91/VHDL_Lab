@@ -1,0 +1,334 @@
+Version 7.2 Build 151 09/26/2007 SJ Full Version
+11
+1009
+OFF
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Partition --
+-- End Partition --
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+add_sub_simple
+# storage
+db|ALU_simple.(1).cnf
+db|ALU_simple.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+..|add_sub_simple|add_sub_simple.vhd
+fdb8d63abb1f9eac162a70a396eb5871
+4
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+n
+16
+PARAMETER_SIGNED_DEC
+USR
+ constraint(a)
+15 downto 0
+PARAMETER_STRING
+USR
+ constraint(b)
+15 downto 0
+PARAMETER_STRING
+USR
+ constraint(sum)
+15 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+add_sub_simple:ADD_ACTION
+}
+# lmf
+c:|altera|72|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+fa_1bit
+# storage
+db|ALU_simple.(2).cnf
+db|ALU_simple.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+..|add_sub_simple|add_sub_simple.vhd
+fdb8d63abb1f9eac162a70a396eb5871
+4
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+add_sub_simple:ADD_ACTION|fa_1bit:\G:15:FA
+add_sub_simple:ADD_ACTION|fa_1bit:\G:14:FA
+add_sub_simple:ADD_ACTION|fa_1bit:\G:13:FA
+add_sub_simple:ADD_ACTION|fa_1bit:\G:12:FA
+add_sub_simple:ADD_ACTION|fa_1bit:\G:11:FA
+add_sub_simple:ADD_ACTION|fa_1bit:\G:10:FA
+add_sub_simple:ADD_ACTION|fa_1bit:\G:9:FA
+add_sub_simple:ADD_ACTION|fa_1bit:\G:8:FA
+add_sub_simple:ADD_ACTION|fa_1bit:\G:7:FA
+add_sub_simple:ADD_ACTION|fa_1bit:\G:6:FA
+add_sub_simple:ADD_ACTION|fa_1bit:\G:5:FA
+add_sub_simple:ADD_ACTION|fa_1bit:\G:4:FA
+add_sub_simple:ADD_ACTION|fa_1bit:\G:3:FA
+add_sub_simple:ADD_ACTION|fa_1bit:\G:2:FA
+add_sub_simple:ADD_ACTION|fa_1bit:\G:1:FA
+add_sub_simple:ADD_ACTION|fa_1bit:\G:0:FA
+}
+# lmf
+c:|altera|72|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+mux_4_to_1_16_bits
+# storage
+db|ALU_simple.(3).cnf
+db|ALU_simple.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+..|mux_4_to_1_16_bits|mux_4_to_1_16_bits.vhd
+9a6b3aaa3050b3255180c4955c9e56
+4
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+n
+16
+PARAMETER_SIGNED_DEC
+USR
+ constraint(i0)
+15 downto 0
+PARAMETER_STRING
+USR
+ constraint(i1)
+15 downto 0
+PARAMETER_STRING
+USR
+ constraint(i2)
+15 downto 0
+PARAMETER_STRING
+USR
+ constraint(i3)
+15 downto 0
+PARAMETER_STRING
+USR
+ constraint(sel)
+1 downto 0
+PARAMETER_STRING
+USR
+ constraint(mux_out)
+15 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+mux_4_to_1_16_bits:ACTION_CHOICE
+}
+# lmf
+c:|altera|72|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+add_sub_simple
+# storage
+db|ALU_simple.(4).cnf
+db|ALU_simple.(4).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+..|add_sub_simple|add_sub_simple.vhd
+fdb8d63abb1f9eac162a70a396eb5871
+4
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+n
+8
+PARAMETER_SIGNED_DEC
+USR
+ constraint(a)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(b)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(sum)
+7 downto 0
+PARAMETER_STRING
+USR
+}
+# lmf
+c:|altera|72|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+mux_4_to_1_16_bits
+# storage
+db|ALU_simple.(5).cnf
+db|ALU_simple.(5).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+..|mux_4_to_1_16_bits|mux_4_to_1_16_bits.vhd
+9a6b3aaa3050b3255180c4955c9e56
+4
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+n
+8
+PARAMETER_SIGNED_DEC
+USR
+ constraint(i0)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(i1)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(i2)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(i3)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(sel)
+1 downto 0
+PARAMETER_STRING
+USR
+ constraint(mux_out)
+7 downto 0
+PARAMETER_STRING
+USR
+}
+# lmf
+c:|altera|72|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+ALU_simple
+# storage
+db|ALU_simple.(0).cnf
+db|ALU_simple.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+ALU_simple.vhd
+343da9b71c9db5b52ea31948ee9f35f
+4
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+m
+16
+PARAMETER_SIGNED_DEC
+DEF
+}
+# hierarchies {
+|
+}
+# lmf
+c:|altera|72|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# complete
+

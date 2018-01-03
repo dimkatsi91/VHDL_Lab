@@ -1,0 +1,179 @@
+|parallel_reg
+data[0] => D_FF:F:0:DFF.d
+data[1] => D_FF:F:1:DFF.d
+data[2] => D_FF:F:2:DFF.d
+data[3] => D_FF:F:3:DFF.d
+data[4] => D_FF:F:4:DFF.d
+data[5] => D_FF:F:5:DFF.d
+data[6] => D_FF:F:6:DFF.d
+data[7] => D_FF:F:7:DFF.d
+data[8] => D_FF:F:8:DFF.d
+data[9] => D_FF:F:9:DFF.d
+data[10] => D_FF:F:10:DFF.d
+data[11] => D_FF:F:11:DFF.d
+data[12] => D_FF:F:12:DFF.d
+data[13] => D_FF:F:13:DFF.d
+data[14] => D_FF:F:14:DFF.d
+data[15] => D_FF:F:15:DFF.d
+clock => D_FF:F:15:DFF.clk
+clock => D_FF:F:14:DFF.clk
+clock => D_FF:F:13:DFF.clk
+clock => D_FF:F:12:DFF.clk
+clock => D_FF:F:11:DFF.clk
+clock => D_FF:F:10:DFF.clk
+clock => D_FF:F:9:DFF.clk
+clock => D_FF:F:8:DFF.clk
+clock => D_FF:F:7:DFF.clk
+clock => D_FF:F:6:DFF.clk
+clock => D_FF:F:5:DFF.clk
+clock => D_FF:F:4:DFF.clk
+clock => D_FF:F:3:DFF.clk
+clock => D_FF:F:2:DFF.clk
+clock => D_FF:F:1:DFF.clk
+clock => D_FF:F:0:DFF.clk
+reset => D_FF:F:15:DFF.rst
+reset => D_FF:F:14:DFF.rst
+reset => D_FF:F:13:DFF.rst
+reset => D_FF:F:12:DFF.rst
+reset => D_FF:F:11:DFF.rst
+reset => D_FF:F:10:DFF.rst
+reset => D_FF:F:9:DFF.rst
+reset => D_FF:F:8:DFF.rst
+reset => D_FF:F:7:DFF.rst
+reset => D_FF:F:6:DFF.rst
+reset => D_FF:F:5:DFF.rst
+reset => D_FF:F:4:DFF.rst
+reset => D_FF:F:3:DFF.rst
+reset => D_FF:F:2:DFF.rst
+reset => D_FF:F:1:DFF.rst
+reset => D_FF:F:0:DFF.rst
+Q[0] <= D_FF:F:0:DFF.q
+Q[1] <= D_FF:F:1:DFF.q
+Q[2] <= D_FF:F:2:DFF.q
+Q[3] <= D_FF:F:3:DFF.q
+Q[4] <= D_FF:F:4:DFF.q
+Q[5] <= D_FF:F:5:DFF.q
+Q[6] <= D_FF:F:6:DFF.q
+Q[7] <= D_FF:F:7:DFF.q
+Q[8] <= D_FF:F:8:DFF.q
+Q[9] <= D_FF:F:9:DFF.q
+Q[10] <= D_FF:F:10:DFF.q
+Q[11] <= D_FF:F:11:DFF.q
+Q[12] <= D_FF:F:12:DFF.q
+Q[13] <= D_FF:F:13:DFF.q
+Q[14] <= D_FF:F:14:DFF.q
+Q[15] <= D_FF:F:15:DFF.q
+
+
+|parallel_reg|D_FF:\F:0:DFF
+d => q~reg0.DATAIN
+clk => q~reg0.CLK
+rst => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|parallel_reg|D_FF:\F:1:DFF
+d => q~reg0.DATAIN
+clk => q~reg0.CLK
+rst => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|parallel_reg|D_FF:\F:2:DFF
+d => q~reg0.DATAIN
+clk => q~reg0.CLK
+rst => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|parallel_reg|D_FF:\F:3:DFF
+d => q~reg0.DATAIN
+clk => q~reg0.CLK
+rst => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|parallel_reg|D_FF:\F:4:DFF
+d => q~reg0.DATAIN
+clk => q~reg0.CLK
+rst => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|parallel_reg|D_FF:\F:5:DFF
+d => q~reg0.DATAIN
+clk => q~reg0.CLK
+rst => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|parallel_reg|D_FF:\F:6:DFF
+d => q~reg0.DATAIN
+clk => q~reg0.CLK
+rst => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|parallel_reg|D_FF:\F:7:DFF
+d => q~reg0.DATAIN
+clk => q~reg0.CLK
+rst => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|parallel_reg|D_FF:\F:8:DFF
+d => q~reg0.DATAIN
+clk => q~reg0.CLK
+rst => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|parallel_reg|D_FF:\F:9:DFF
+d => q~reg0.DATAIN
+clk => q~reg0.CLK
+rst => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|parallel_reg|D_FF:\F:10:DFF
+d => q~reg0.DATAIN
+clk => q~reg0.CLK
+rst => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|parallel_reg|D_FF:\F:11:DFF
+d => q~reg0.DATAIN
+clk => q~reg0.CLK
+rst => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|parallel_reg|D_FF:\F:12:DFF
+d => q~reg0.DATAIN
+clk => q~reg0.CLK
+rst => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|parallel_reg|D_FF:\F:13:DFF
+d => q~reg0.DATAIN
+clk => q~reg0.CLK
+rst => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|parallel_reg|D_FF:\F:14:DFF
+d => q~reg0.DATAIN
+clk => q~reg0.CLK
+rst => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|parallel_reg|D_FF:\F:15:DFF
+d => q~reg0.DATAIN
+clk => q~reg0.CLK
+rst => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

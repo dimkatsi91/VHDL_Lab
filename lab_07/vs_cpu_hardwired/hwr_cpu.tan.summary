@@ -1,0 +1,36 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 17.335 ns
+From           : memory:external_mem|altsyncram:altsyncram_component|altsyncram_6j41:auto_generated|ram_block1a0~porta_address_reg5
+To             : dataBus[1]
+From Clock     : clock
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Clock Setup: 'clock'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 86.99 MHz ( period = 11.496 ns )
+From           : memory:external_mem|altsyncram:altsyncram_component|altsyncram_6j41:auto_generated|ram_block1a0~porta_address_reg5
+To             : inc_reg:AC|Q[6]
+From Clock     : clock
+To Clock       : clock
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 0
+
+--------------------------------------------------------------------------------------
+

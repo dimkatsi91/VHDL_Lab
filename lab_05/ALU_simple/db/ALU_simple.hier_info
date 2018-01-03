@@ -1,0 +1,513 @@
+|ALU_simple
+A[0] => add_sub_simple:ADD_ACTION.A[0]
+A[0] => S_XOR[0].IN0
+A[0] => S_OR[0].IN0
+A[0] => S_AND[0].IN0
+A[1] => add_sub_simple:ADD_ACTION.A[1]
+A[1] => S_XOR[1].IN0
+A[1] => S_OR[1].IN0
+A[1] => S_AND[1].IN0
+A[2] => add_sub_simple:ADD_ACTION.A[2]
+A[2] => S_XOR[2].IN0
+A[2] => S_OR[2].IN0
+A[2] => S_AND[2].IN0
+A[3] => add_sub_simple:ADD_ACTION.A[3]
+A[3] => S_XOR[3].IN0
+A[3] => S_OR[3].IN0
+A[3] => S_AND[3].IN0
+A[4] => add_sub_simple:ADD_ACTION.A[4]
+A[4] => S_XOR[4].IN0
+A[4] => S_OR[4].IN0
+A[4] => S_AND[4].IN0
+A[5] => add_sub_simple:ADD_ACTION.A[5]
+A[5] => S_XOR[5].IN0
+A[5] => S_OR[5].IN0
+A[5] => S_AND[5].IN0
+A[6] => add_sub_simple:ADD_ACTION.A[6]
+A[6] => S_XOR[6].IN0
+A[6] => S_OR[6].IN0
+A[6] => S_AND[6].IN0
+A[7] => add_sub_simple:ADD_ACTION.A[7]
+A[7] => S_XOR[7].IN0
+A[7] => S_OR[7].IN0
+A[7] => S_AND[7].IN0
+A[8] => add_sub_simple:ADD_ACTION.A[8]
+A[8] => S_XOR[8].IN0
+A[8] => S_OR[8].IN0
+A[8] => S_AND[8].IN0
+A[9] => add_sub_simple:ADD_ACTION.A[9]
+A[9] => S_XOR[9].IN0
+A[9] => S_OR[9].IN0
+A[9] => S_AND[9].IN0
+A[10] => add_sub_simple:ADD_ACTION.A[10]
+A[10] => S_XOR[10].IN0
+A[10] => S_OR[10].IN0
+A[10] => S_AND[10].IN0
+A[11] => add_sub_simple:ADD_ACTION.A[11]
+A[11] => S_XOR[11].IN0
+A[11] => S_OR[11].IN0
+A[11] => S_AND[11].IN0
+A[12] => add_sub_simple:ADD_ACTION.A[12]
+A[12] => S_XOR[12].IN0
+A[12] => S_OR[12].IN0
+A[12] => S_AND[12].IN0
+A[13] => add_sub_simple:ADD_ACTION.A[13]
+A[13] => S_XOR[13].IN0
+A[13] => S_OR[13].IN0
+A[13] => S_AND[13].IN0
+A[14] => add_sub_simple:ADD_ACTION.A[14]
+A[14] => S_XOR[14].IN0
+A[14] => S_OR[14].IN0
+A[14] => S_AND[14].IN0
+A[15] => add_sub_simple:ADD_ACTION.A[15]
+A[15] => S_XOR[15].IN0
+A[15] => S_OR[15].IN0
+A[15] => S_AND[15].IN0
+B[0] => add_sub_simple:ADD_ACTION.B[0]
+B[0] => S_XOR[0].IN1
+B[0] => S_OR[0].IN1
+B[0] => S_AND[0].IN1
+B[1] => add_sub_simple:ADD_ACTION.B[1]
+B[1] => S_XOR[1].IN1
+B[1] => S_OR[1].IN1
+B[1] => S_AND[1].IN1
+B[2] => add_sub_simple:ADD_ACTION.B[2]
+B[2] => S_XOR[2].IN1
+B[2] => S_OR[2].IN1
+B[2] => S_AND[2].IN1
+B[3] => add_sub_simple:ADD_ACTION.B[3]
+B[3] => S_XOR[3].IN1
+B[3] => S_OR[3].IN1
+B[3] => S_AND[3].IN1
+B[4] => add_sub_simple:ADD_ACTION.B[4]
+B[4] => S_XOR[4].IN1
+B[4] => S_OR[4].IN1
+B[4] => S_AND[4].IN1
+B[5] => add_sub_simple:ADD_ACTION.B[5]
+B[5] => S_XOR[5].IN1
+B[5] => S_OR[5].IN1
+B[5] => S_AND[5].IN1
+B[6] => add_sub_simple:ADD_ACTION.B[6]
+B[6] => S_XOR[6].IN1
+B[6] => S_OR[6].IN1
+B[6] => S_AND[6].IN1
+B[7] => add_sub_simple:ADD_ACTION.B[7]
+B[7] => S_XOR[7].IN1
+B[7] => S_OR[7].IN1
+B[7] => S_AND[7].IN1
+B[8] => add_sub_simple:ADD_ACTION.B[8]
+B[8] => S_XOR[8].IN1
+B[8] => S_OR[8].IN1
+B[8] => S_AND[8].IN1
+B[9] => add_sub_simple:ADD_ACTION.B[9]
+B[9] => S_XOR[9].IN1
+B[9] => S_OR[9].IN1
+B[9] => S_AND[9].IN1
+B[10] => add_sub_simple:ADD_ACTION.B[10]
+B[10] => S_XOR[10].IN1
+B[10] => S_OR[10].IN1
+B[10] => S_AND[10].IN1
+B[11] => add_sub_simple:ADD_ACTION.B[11]
+B[11] => S_XOR[11].IN1
+B[11] => S_OR[11].IN1
+B[11] => S_AND[11].IN1
+B[12] => add_sub_simple:ADD_ACTION.B[12]
+B[12] => S_XOR[12].IN1
+B[12] => S_OR[12].IN1
+B[12] => S_AND[12].IN1
+B[13] => add_sub_simple:ADD_ACTION.B[13]
+B[13] => S_XOR[13].IN1
+B[13] => S_OR[13].IN1
+B[13] => S_AND[13].IN1
+B[14] => add_sub_simple:ADD_ACTION.B[14]
+B[14] => S_XOR[14].IN1
+B[14] => S_OR[14].IN1
+B[14] => S_AND[14].IN1
+B[15] => add_sub_simple:ADD_ACTION.B[15]
+B[15] => S_XOR[15].IN1
+B[15] => S_OR[15].IN1
+B[15] => S_AND[15].IN1
+Sel[0] => mux_4_to_1_16_bits:ACTION_CHOICE.sel[0]
+Sel[1] => mux_4_to_1_16_bits:ACTION_CHOICE.sel[1]
+mode => add_sub_simple:ADD_ACTION.Cin
+COUT <= add_sub_simple:ADD_ACTION.Cout
+OV <= add_sub_simple:ADD_ACTION.ov
+R[0] <= mux_4_to_1_16_bits:ACTION_CHOICE.Mux_out[0]
+R[1] <= mux_4_to_1_16_bits:ACTION_CHOICE.Mux_out[1]
+R[2] <= mux_4_to_1_16_bits:ACTION_CHOICE.Mux_out[2]
+R[3] <= mux_4_to_1_16_bits:ACTION_CHOICE.Mux_out[3]
+R[4] <= mux_4_to_1_16_bits:ACTION_CHOICE.Mux_out[4]
+R[5] <= mux_4_to_1_16_bits:ACTION_CHOICE.Mux_out[5]
+R[6] <= mux_4_to_1_16_bits:ACTION_CHOICE.Mux_out[6]
+R[7] <= mux_4_to_1_16_bits:ACTION_CHOICE.Mux_out[7]
+R[8] <= mux_4_to_1_16_bits:ACTION_CHOICE.Mux_out[8]
+R[9] <= mux_4_to_1_16_bits:ACTION_CHOICE.Mux_out[9]
+R[10] <= mux_4_to_1_16_bits:ACTION_CHOICE.Mux_out[10]
+R[11] <= mux_4_to_1_16_bits:ACTION_CHOICE.Mux_out[11]
+R[12] <= mux_4_to_1_16_bits:ACTION_CHOICE.Mux_out[12]
+R[13] <= mux_4_to_1_16_bits:ACTION_CHOICE.Mux_out[13]
+R[14] <= mux_4_to_1_16_bits:ACTION_CHOICE.Mux_out[14]
+R[15] <= mux_4_to_1_16_bits:ACTION_CHOICE.Mux_out[15]
+
+
+|ALU_simple|add_sub_simple:ADD_ACTION
+A[0] => fa_1bit:G:0:FA.a
+A[1] => fa_1bit:G:1:FA.a
+A[2] => fa_1bit:G:2:FA.a
+A[3] => fa_1bit:G:3:FA.a
+A[4] => fa_1bit:G:4:FA.a
+A[5] => fa_1bit:G:5:FA.a
+A[6] => fa_1bit:G:6:FA.a
+A[7] => fa_1bit:G:7:FA.a
+A[8] => fa_1bit:G:8:FA.a
+A[9] => fa_1bit:G:9:FA.a
+A[10] => fa_1bit:G:10:FA.a
+A[11] => fa_1bit:G:11:FA.a
+A[12] => fa_1bit:G:12:FA.a
+A[13] => fa_1bit:G:13:FA.a
+A[14] => fa_1bit:G:14:FA.a
+A[15] => fa_1bit:G:15:FA.a
+B[0] => X[0].IN1
+B[1] => X[1].IN1
+B[2] => X[2].IN1
+B[3] => X[3].IN1
+B[4] => X[4].IN1
+B[5] => X[5].IN1
+B[6] => X[6].IN1
+B[7] => X[7].IN1
+B[8] => X[8].IN1
+B[9] => X[9].IN1
+B[10] => X[10].IN1
+B[11] => X[11].IN1
+B[12] => X[12].IN1
+B[13] => X[13].IN1
+B[14] => X[14].IN1
+B[15] => X[15].IN0
+Cin => fa_1bit:G:0:FA.c
+Cin => X[0].IN0
+Cin => X[1].IN0
+Cin => X[2].IN0
+Cin => X[3].IN0
+Cin => X[4].IN0
+Cin => X[5].IN0
+Cin => X[6].IN0
+Cin => X[7].IN0
+Cin => X[8].IN0
+Cin => X[9].IN0
+Cin => X[10].IN0
+Cin => X[11].IN0
+Cin => X[12].IN0
+Cin => X[13].IN0
+Cin => X[14].IN0
+Cin => X[15].IN1
+Sum[0] <= fa_1bit:G:0:FA.sum
+Sum[1] <= fa_1bit:G:1:FA.sum
+Sum[2] <= fa_1bit:G:2:FA.sum
+Sum[3] <= fa_1bit:G:3:FA.sum
+Sum[4] <= fa_1bit:G:4:FA.sum
+Sum[5] <= fa_1bit:G:5:FA.sum
+Sum[6] <= fa_1bit:G:6:FA.sum
+Sum[7] <= fa_1bit:G:7:FA.sum
+Sum[8] <= fa_1bit:G:8:FA.sum
+Sum[9] <= fa_1bit:G:9:FA.sum
+Sum[10] <= fa_1bit:G:10:FA.sum
+Sum[11] <= fa_1bit:G:11:FA.sum
+Sum[12] <= fa_1bit:G:12:FA.sum
+Sum[13] <= fa_1bit:G:13:FA.sum
+Sum[14] <= fa_1bit:G:14:FA.sum
+Sum[15] <= fa_1bit:G:15:FA.sum
+Cout <= fa_1bit:G:15:FA.cout
+ov <= ov~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_simple|add_sub_simple:ADD_ACTION|fa_1bit:\G:15:FA
+a => cout~1.IN0
+a => sum~0.IN0
+b => cout~1.IN1
+b => sum~0.IN1
+c => cout~0.IN1
+c => sum~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_simple|add_sub_simple:ADD_ACTION|fa_1bit:\G:14:FA
+a => cout~1.IN0
+a => sum~0.IN0
+b => cout~1.IN1
+b => sum~0.IN1
+c => cout~0.IN1
+c => sum~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_simple|add_sub_simple:ADD_ACTION|fa_1bit:\G:13:FA
+a => cout~1.IN0
+a => sum~0.IN0
+b => cout~1.IN1
+b => sum~0.IN1
+c => cout~0.IN1
+c => sum~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_simple|add_sub_simple:ADD_ACTION|fa_1bit:\G:12:FA
+a => cout~1.IN0
+a => sum~0.IN0
+b => cout~1.IN1
+b => sum~0.IN1
+c => cout~0.IN1
+c => sum~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_simple|add_sub_simple:ADD_ACTION|fa_1bit:\G:11:FA
+a => cout~1.IN0
+a => sum~0.IN0
+b => cout~1.IN1
+b => sum~0.IN1
+c => cout~0.IN1
+c => sum~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_simple|add_sub_simple:ADD_ACTION|fa_1bit:\G:10:FA
+a => cout~1.IN0
+a => sum~0.IN0
+b => cout~1.IN1
+b => sum~0.IN1
+c => cout~0.IN1
+c => sum~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_simple|add_sub_simple:ADD_ACTION|fa_1bit:\G:9:FA
+a => cout~1.IN0
+a => sum~0.IN0
+b => cout~1.IN1
+b => sum~0.IN1
+c => cout~0.IN1
+c => sum~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_simple|add_sub_simple:ADD_ACTION|fa_1bit:\G:8:FA
+a => cout~1.IN0
+a => sum~0.IN0
+b => cout~1.IN1
+b => sum~0.IN1
+c => cout~0.IN1
+c => sum~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_simple|add_sub_simple:ADD_ACTION|fa_1bit:\G:7:FA
+a => cout~1.IN0
+a => sum~0.IN0
+b => cout~1.IN1
+b => sum~0.IN1
+c => cout~0.IN1
+c => sum~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_simple|add_sub_simple:ADD_ACTION|fa_1bit:\G:6:FA
+a => cout~1.IN0
+a => sum~0.IN0
+b => cout~1.IN1
+b => sum~0.IN1
+c => cout~0.IN1
+c => sum~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_simple|add_sub_simple:ADD_ACTION|fa_1bit:\G:5:FA
+a => cout~1.IN0
+a => sum~0.IN0
+b => cout~1.IN1
+b => sum~0.IN1
+c => cout~0.IN1
+c => sum~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_simple|add_sub_simple:ADD_ACTION|fa_1bit:\G:4:FA
+a => cout~1.IN0
+a => sum~0.IN0
+b => cout~1.IN1
+b => sum~0.IN1
+c => cout~0.IN1
+c => sum~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_simple|add_sub_simple:ADD_ACTION|fa_1bit:\G:3:FA
+a => cout~1.IN0
+a => sum~0.IN0
+b => cout~1.IN1
+b => sum~0.IN1
+c => cout~0.IN1
+c => sum~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_simple|add_sub_simple:ADD_ACTION|fa_1bit:\G:2:FA
+a => cout~1.IN0
+a => sum~0.IN0
+b => cout~1.IN1
+b => sum~0.IN1
+c => cout~0.IN1
+c => sum~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_simple|add_sub_simple:ADD_ACTION|fa_1bit:\G:1:FA
+a => cout~1.IN0
+a => sum~0.IN0
+b => cout~1.IN1
+b => sum~0.IN1
+c => cout~0.IN1
+c => sum~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_simple|add_sub_simple:ADD_ACTION|fa_1bit:\G:0:FA
+a => cout~1.IN0
+a => sum~0.IN0
+b => cout~1.IN1
+b => sum~0.IN1
+c => cout~0.IN1
+c => sum~1.IN1
+sum <= sum~1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU_simple|mux_4_to_1_16_bits:ACTION_CHOICE
+I0[0] => Mux15.IN0
+I0[1] => Mux14.IN0
+I0[2] => Mux13.IN0
+I0[3] => Mux12.IN0
+I0[4] => Mux11.IN0
+I0[5] => Mux10.IN0
+I0[6] => Mux9.IN0
+I0[7] => Mux8.IN0
+I0[8] => Mux7.IN0
+I0[9] => Mux6.IN0
+I0[10] => Mux5.IN0
+I0[11] => Mux4.IN0
+I0[12] => Mux3.IN0
+I0[13] => Mux2.IN0
+I0[14] => Mux1.IN0
+I0[15] => Mux0.IN0
+I1[0] => Mux15.IN1
+I1[1] => Mux14.IN1
+I1[2] => Mux13.IN1
+I1[3] => Mux12.IN1
+I1[4] => Mux11.IN1
+I1[5] => Mux10.IN1
+I1[6] => Mux9.IN1
+I1[7] => Mux8.IN1
+I1[8] => Mux7.IN1
+I1[9] => Mux6.IN1
+I1[10] => Mux5.IN1
+I1[11] => Mux4.IN1
+I1[12] => Mux3.IN1
+I1[13] => Mux2.IN1
+I1[14] => Mux1.IN1
+I1[15] => Mux0.IN1
+I2[0] => Mux15.IN2
+I2[1] => Mux14.IN2
+I2[2] => Mux13.IN2
+I2[3] => Mux12.IN2
+I2[4] => Mux11.IN2
+I2[5] => Mux10.IN2
+I2[6] => Mux9.IN2
+I2[7] => Mux8.IN2
+I2[8] => Mux7.IN2
+I2[9] => Mux6.IN2
+I2[10] => Mux5.IN2
+I2[11] => Mux4.IN2
+I2[12] => Mux3.IN2
+I2[13] => Mux2.IN2
+I2[14] => Mux1.IN2
+I2[15] => Mux0.IN2
+I3[0] => Mux15.IN3
+I3[1] => Mux14.IN3
+I3[2] => Mux13.IN3
+I3[3] => Mux12.IN3
+I3[4] => Mux11.IN3
+I3[5] => Mux10.IN3
+I3[6] => Mux9.IN3
+I3[7] => Mux8.IN3
+I3[8] => Mux7.IN3
+I3[9] => Mux6.IN3
+I3[10] => Mux5.IN3
+I3[11] => Mux4.IN3
+I3[12] => Mux3.IN3
+I3[13] => Mux2.IN3
+I3[14] => Mux1.IN3
+I3[15] => Mux0.IN3
+sel[0] => Mux15.IN5
+sel[0] => Mux14.IN5
+sel[0] => Mux13.IN5
+sel[0] => Mux12.IN5
+sel[0] => Mux11.IN5
+sel[0] => Mux10.IN5
+sel[0] => Mux9.IN5
+sel[0] => Mux8.IN5
+sel[0] => Mux7.IN5
+sel[0] => Mux6.IN5
+sel[0] => Mux5.IN5
+sel[0] => Mux4.IN5
+sel[0] => Mux3.IN5
+sel[0] => Mux2.IN5
+sel[0] => Mux1.IN5
+sel[0] => Mux0.IN5
+sel[1] => Mux15.IN4
+sel[1] => Mux14.IN4
+sel[1] => Mux13.IN4
+sel[1] => Mux12.IN4
+sel[1] => Mux11.IN4
+sel[1] => Mux10.IN4
+sel[1] => Mux9.IN4
+sel[1] => Mux8.IN4
+sel[1] => Mux7.IN4
+sel[1] => Mux6.IN4
+sel[1] => Mux5.IN4
+sel[1] => Mux4.IN4
+sel[1] => Mux3.IN4
+sel[1] => Mux2.IN4
+sel[1] => Mux1.IN4
+sel[1] => Mux0.IN4
+Mux_out[0] <= Mux15.DB_MAX_OUTPUT_PORT_TYPE
+Mux_out[1] <= Mux14.DB_MAX_OUTPUT_PORT_TYPE
+Mux_out[2] <= Mux13.DB_MAX_OUTPUT_PORT_TYPE
+Mux_out[3] <= Mux12.DB_MAX_OUTPUT_PORT_TYPE
+Mux_out[4] <= Mux11.DB_MAX_OUTPUT_PORT_TYPE
+Mux_out[5] <= Mux10.DB_MAX_OUTPUT_PORT_TYPE
+Mux_out[6] <= Mux9.DB_MAX_OUTPUT_PORT_TYPE
+Mux_out[7] <= Mux8.DB_MAX_OUTPUT_PORT_TYPE
+Mux_out[8] <= Mux7.DB_MAX_OUTPUT_PORT_TYPE
+Mux_out[9] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+Mux_out[10] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+Mux_out[11] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+Mux_out[12] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+Mux_out[13] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+Mux_out[14] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+Mux_out[15] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+

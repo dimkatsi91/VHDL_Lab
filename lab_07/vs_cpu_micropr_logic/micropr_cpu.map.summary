@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Mon Jan 25 18:21:54 2016
+Quartus II 64-Bit Version : 7.2 Build 151 09/26/2007 SJ Full Version
+Revision Name : micropr_cpu
+Top-level Entity Name : micropr_cpu
+Family : Cyclone II
+Total logic elements : 60
+    Total combinational functions : 60
+    Dedicated logic registers : 30
+Total registers : 30
+Total pins : 51
+Total virtual pins : 0
+Total memory bits : 768
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
