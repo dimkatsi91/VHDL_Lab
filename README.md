@@ -1,3 +1,5 @@
+#VHD-Lab
+
 MSc Course: "Digital Design with VHDL" (Lab Exercises) 
 
 MSc Title: "Electronics & Information Processing" @ University of Patras, Greece 
@@ -6,7 +8,7 @@ Author: Dimos Katsimardos
 
 Period: 2015 November - 2016 February
 
-URL: https://dimkatsi91.github.io/vhdl_lab/ 
+URL: https://dimkatsi91.github.io/VHDL-Lab/
 
 -----------------------------------------------------------------------------------------------------------------------------
 
