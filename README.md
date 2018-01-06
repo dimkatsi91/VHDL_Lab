@@ -6,6 +6,8 @@ Author: Dimos Katsimardos
 
 Period: 2015 November - 2016 February
 
+URL: https://dimkatsi91.github.io/vhdl_lab/ 
+
 -----------------------------------------------------------------------------------------------------------------------------
 
 VHDL lab exercises from simple behavioral and sequential circuits to a simple CPU design with hardwired and microprogrammed logic
