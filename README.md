@@ -1,4 +1,4 @@
-#VHD-Lab
+#VHD Exercises
 
 MSc Course: "Digital Design with VHDL" (Lab Exercises) 
 
