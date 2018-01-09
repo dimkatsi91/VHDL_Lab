@@ -1,0 +1,469 @@
+Simulator report for uni_shift_reg
+Sun Jan 03 15:49:18 2016
+Quartus II 64-Bit Version 7.2 Build 151 09/26/2007 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2007 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 277 nodes    ;
+; Simulation Coverage         ;      92.06 % ;
+; Total Number of Transitions ; 16681        ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                             ;
++--------------------------------------------------------------------------------------------+-------------------+---------------+
+; Option                                                                                     ; Setting           ; Default Value ;
++--------------------------------------------------------------------------------------------+-------------------+---------------+
+; Simulation mode                                                                            ; Functional        ; Timing        ;
+; Start time                                                                                 ; 0 ns              ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF              ;               ;
+; Vector input source                                                                        ; uni_shift_reg.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                ; On            ;
+; Check outputs                                                                              ; Off               ; Off           ;
+; Report simulation coverage                                                                 ; On                ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                ; On            ;
+; Display missing 1-value coverage report                                                    ; On                ; On            ;
+; Display missing 0-value coverage report                                                    ; On                ; On            ;
+; Detect setup and hold time violations                                                      ; Off               ; Off           ;
+; Detect glitches                                                                            ; Off               ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off               ; Off           ;
+; Generate Signal Activity File                                                              ; Off               ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off               ; Off           ;
+; Group bus channels in simulation results                                                   ; Off               ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE        ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off               ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off               ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto              ; Auto          ;
++--------------------------------------------------------------------------------------------+-------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      92.06 % ;
+; Total nodes checked                                 ; 277          ;
+; Total output ports checked                          ; 277          ;
+; Total output ports with complete 1/0-value coverage ; 255          ;
+; Total output ports with no 1/0-value coverage       ; 8            ;
+; Total output ports with no 1-value coverage         ; 14           ;
+; Total output ports with no 0-value coverage         ; 16           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                    ;
++----------------------------------------------------------------------+----------------------------------------------------------------------+------------------+
+; Node Name                                                            ; Output Port Name                                                     ; Output Port Type ;
++----------------------------------------------------------------------+----------------------------------------------------------------------+------------------+
+; |uni_shift_reg|hold[0]                                               ; |uni_shift_reg|hold[0]                                               ; regout           ;
+; |uni_shift_reg|hold[15]                                              ; |uni_shift_reg|hold[15]                                              ; regout           ;
+; |uni_shift_reg|hold[14]                                              ; |uni_shift_reg|hold[14]                                              ; regout           ;
+; |uni_shift_reg|hold[13]                                              ; |uni_shift_reg|hold[13]                                              ; regout           ;
+; |uni_shift_reg|hold[12]                                              ; |uni_shift_reg|hold[12]                                              ; regout           ;
+; |uni_shift_reg|hold[11]                                              ; |uni_shift_reg|hold[11]                                              ; regout           ;
+; |uni_shift_reg|hold[10]                                              ; |uni_shift_reg|hold[10]                                              ; regout           ;
+; |uni_shift_reg|hold[9]                                               ; |uni_shift_reg|hold[9]                                               ; regout           ;
+; |uni_shift_reg|hold[8]                                               ; |uni_shift_reg|hold[8]                                               ; regout           ;
+; |uni_shift_reg|hold[7]                                               ; |uni_shift_reg|hold[7]                                               ; regout           ;
+; |uni_shift_reg|hold[6]                                               ; |uni_shift_reg|hold[6]                                               ; regout           ;
+; |uni_shift_reg|hold[5]                                               ; |uni_shift_reg|hold[5]                                               ; regout           ;
+; |uni_shift_reg|hold[4]                                               ; |uni_shift_reg|hold[4]                                               ; regout           ;
+; |uni_shift_reg|hold[3]                                               ; |uni_shift_reg|hold[3]                                               ; regout           ;
+; |uni_shift_reg|hold[2]                                               ; |uni_shift_reg|hold[2]                                               ; regout           ;
+; |uni_shift_reg|hold[1]                                               ; |uni_shift_reg|hold[1]                                               ; regout           ;
+; |uni_shift_reg|CLOCK                                                 ; |uni_shift_reg|CLOCK                                                 ; out              ;
+; |uni_shift_reg|shift_in                                              ; |uni_shift_reg|shift_in                                              ; out              ;
+; |uni_shift_reg|Sel_logic[0]                                          ; |uni_shift_reg|Sel_logic[0]                                          ; out              ;
+; |uni_shift_reg|Sel_logic[1]                                          ; |uni_shift_reg|Sel_logic[1]                                          ; out              ;
+; |uni_shift_reg|DATA_IN[0]                                            ; |uni_shift_reg|DATA_IN[0]                                            ; out              ;
+; |uni_shift_reg|DATA_IN[1]                                            ; |uni_shift_reg|DATA_IN[1]                                            ; out              ;
+; |uni_shift_reg|DATA_IN[2]                                            ; |uni_shift_reg|DATA_IN[2]                                            ; out              ;
+; |uni_shift_reg|DATA_IN[3]                                            ; |uni_shift_reg|DATA_IN[3]                                            ; out              ;
+; |uni_shift_reg|DATA_IN[4]                                            ; |uni_shift_reg|DATA_IN[4]                                            ; out              ;
+; |uni_shift_reg|DATA_IN[5]                                            ; |uni_shift_reg|DATA_IN[5]                                            ; out              ;
+; |uni_shift_reg|DATA_IN[6]                                            ; |uni_shift_reg|DATA_IN[6]                                            ; out              ;
+; |uni_shift_reg|DATA_IN[7]                                            ; |uni_shift_reg|DATA_IN[7]                                            ; out              ;
+; |uni_shift_reg|DATA_OUT[0]                                           ; |uni_shift_reg|DATA_OUT[0]                                           ; pin_out          ;
+; |uni_shift_reg|DATA_OUT[1]                                           ; |uni_shift_reg|DATA_OUT[1]                                           ; pin_out          ;
+; |uni_shift_reg|DATA_OUT[2]                                           ; |uni_shift_reg|DATA_OUT[2]                                           ; pin_out          ;
+; |uni_shift_reg|DATA_OUT[3]                                           ; |uni_shift_reg|DATA_OUT[3]                                           ; pin_out          ;
+; |uni_shift_reg|DATA_OUT[4]                                           ; |uni_shift_reg|DATA_OUT[4]                                           ; pin_out          ;
+; |uni_shift_reg|DATA_OUT[5]                                           ; |uni_shift_reg|DATA_OUT[5]                                           ; pin_out          ;
+; |uni_shift_reg|DATA_OUT[6]                                           ; |uni_shift_reg|DATA_OUT[6]                                           ; pin_out          ;
+; |uni_shift_reg|DATA_OUT[7]                                           ; |uni_shift_reg|DATA_OUT[7]                                           ; pin_out          ;
+; |uni_shift_reg|DATA_OUT[8]                                           ; |uni_shift_reg|DATA_OUT[8]                                           ; pin_out          ;
+; |uni_shift_reg|DATA_OUT[9]                                           ; |uni_shift_reg|DATA_OUT[9]                                           ; pin_out          ;
+; |uni_shift_reg|DATA_OUT[10]                                          ; |uni_shift_reg|DATA_OUT[10]                                          ; pin_out          ;
+; |uni_shift_reg|DATA_OUT[11]                                          ; |uni_shift_reg|DATA_OUT[11]                                          ; pin_out          ;
+; |uni_shift_reg|DATA_OUT[12]                                          ; |uni_shift_reg|DATA_OUT[12]                                          ; pin_out          ;
+; |uni_shift_reg|DATA_OUT[13]                                          ; |uni_shift_reg|DATA_OUT[13]                                          ; pin_out          ;
+; |uni_shift_reg|DATA_OUT[14]                                          ; |uni_shift_reg|DATA_OUT[14]                                          ; pin_out          ;
+; |uni_shift_reg|DATA_OUT[15]                                          ; |uni_shift_reg|DATA_OUT[15]                                          ; pin_out          ;
+; |uni_shift_reg|lpm_mux:Mux15|mux_umc:auto_generated|_~0              ; |uni_shift_reg|lpm_mux:Mux15|mux_umc:auto_generated|_~0              ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux15|mux_umc:auto_generated|_~1              ; |uni_shift_reg|lpm_mux:Mux15|mux_umc:auto_generated|_~1              ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux15|mux_umc:auto_generated|result_node[0]~0 ; |uni_shift_reg|lpm_mux:Mux15|mux_umc:auto_generated|result_node[0]~0 ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux15|mux_umc:auto_generated|_~2              ; |uni_shift_reg|lpm_mux:Mux15|mux_umc:auto_generated|_~2              ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux15|mux_umc:auto_generated|_~3              ; |uni_shift_reg|lpm_mux:Mux15|mux_umc:auto_generated|_~3              ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux15|mux_umc:auto_generated|result_node[0]~1 ; |uni_shift_reg|lpm_mux:Mux15|mux_umc:auto_generated|result_node[0]~1 ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux15|mux_umc:auto_generated|result_node[0]   ; |uni_shift_reg|lpm_mux:Mux15|mux_umc:auto_generated|result_node[0]   ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux15|mux_umc:auto_generated|_~4              ; |uni_shift_reg|lpm_mux:Mux15|mux_umc:auto_generated|_~4              ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux15|mux_umc:auto_generated|_~5              ; |uni_shift_reg|lpm_mux:Mux15|mux_umc:auto_generated|_~5              ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux15|mux_umc:auto_generated|_~6              ; |uni_shift_reg|lpm_mux:Mux15|mux_umc:auto_generated|_~6              ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux15|mux_umc:auto_generated|w_result19w~0    ; |uni_shift_reg|lpm_mux:Mux15|mux_umc:auto_generated|w_result19w~0    ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux15|mux_umc:auto_generated|_~7              ; |uni_shift_reg|lpm_mux:Mux15|mux_umc:auto_generated|_~7              ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux15|mux_umc:auto_generated|w_result19w~1    ; |uni_shift_reg|lpm_mux:Mux15|mux_umc:auto_generated|w_result19w~1    ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux15|mux_umc:auto_generated|w_result19w      ; |uni_shift_reg|lpm_mux:Mux15|mux_umc:auto_generated|w_result19w      ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux14|mux_umc:auto_generated|_~0              ; |uni_shift_reg|lpm_mux:Mux14|mux_umc:auto_generated|_~0              ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux14|mux_umc:auto_generated|_~1              ; |uni_shift_reg|lpm_mux:Mux14|mux_umc:auto_generated|_~1              ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux14|mux_umc:auto_generated|result_node[0]~0 ; |uni_shift_reg|lpm_mux:Mux14|mux_umc:auto_generated|result_node[0]~0 ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux14|mux_umc:auto_generated|_~2              ; |uni_shift_reg|lpm_mux:Mux14|mux_umc:auto_generated|_~2              ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux14|mux_umc:auto_generated|_~3              ; |uni_shift_reg|lpm_mux:Mux14|mux_umc:auto_generated|_~3              ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux14|mux_umc:auto_generated|result_node[0]~1 ; |uni_shift_reg|lpm_mux:Mux14|mux_umc:auto_generated|result_node[0]~1 ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux14|mux_umc:auto_generated|result_node[0]   ; |uni_shift_reg|lpm_mux:Mux14|mux_umc:auto_generated|result_node[0]   ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux14|mux_umc:auto_generated|_~4              ; |uni_shift_reg|lpm_mux:Mux14|mux_umc:auto_generated|_~4              ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux14|mux_umc:auto_generated|_~5              ; |uni_shift_reg|lpm_mux:Mux14|mux_umc:auto_generated|_~5              ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux14|mux_umc:auto_generated|_~6              ; |uni_shift_reg|lpm_mux:Mux14|mux_umc:auto_generated|_~6              ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux14|mux_umc:auto_generated|w_result19w~0    ; |uni_shift_reg|lpm_mux:Mux14|mux_umc:auto_generated|w_result19w~0    ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux14|mux_umc:auto_generated|_~7              ; |uni_shift_reg|lpm_mux:Mux14|mux_umc:auto_generated|_~7              ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux14|mux_umc:auto_generated|w_result19w~1    ; |uni_shift_reg|lpm_mux:Mux14|mux_umc:auto_generated|w_result19w~1    ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux14|mux_umc:auto_generated|w_result19w      ; |uni_shift_reg|lpm_mux:Mux14|mux_umc:auto_generated|w_result19w      ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux13|mux_umc:auto_generated|_~0              ; |uni_shift_reg|lpm_mux:Mux13|mux_umc:auto_generated|_~0              ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux13|mux_umc:auto_generated|_~1              ; |uni_shift_reg|lpm_mux:Mux13|mux_umc:auto_generated|_~1              ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux13|mux_umc:auto_generated|result_node[0]~0 ; |uni_shift_reg|lpm_mux:Mux13|mux_umc:auto_generated|result_node[0]~0 ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux13|mux_umc:auto_generated|_~2              ; |uni_shift_reg|lpm_mux:Mux13|mux_umc:auto_generated|_~2              ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux13|mux_umc:auto_generated|_~3              ; |uni_shift_reg|lpm_mux:Mux13|mux_umc:auto_generated|_~3              ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux13|mux_umc:auto_generated|result_node[0]~1 ; |uni_shift_reg|lpm_mux:Mux13|mux_umc:auto_generated|result_node[0]~1 ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux13|mux_umc:auto_generated|result_node[0]   ; |uni_shift_reg|lpm_mux:Mux13|mux_umc:auto_generated|result_node[0]   ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux13|mux_umc:auto_generated|_~4              ; |uni_shift_reg|lpm_mux:Mux13|mux_umc:auto_generated|_~4              ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux13|mux_umc:auto_generated|_~5              ; |uni_shift_reg|lpm_mux:Mux13|mux_umc:auto_generated|_~5              ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux13|mux_umc:auto_generated|_~6              ; |uni_shift_reg|lpm_mux:Mux13|mux_umc:auto_generated|_~6              ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux13|mux_umc:auto_generated|w_result19w~0    ; |uni_shift_reg|lpm_mux:Mux13|mux_umc:auto_generated|w_result19w~0    ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux13|mux_umc:auto_generated|_~7              ; |uni_shift_reg|lpm_mux:Mux13|mux_umc:auto_generated|_~7              ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux13|mux_umc:auto_generated|w_result19w~1    ; |uni_shift_reg|lpm_mux:Mux13|mux_umc:auto_generated|w_result19w~1    ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux13|mux_umc:auto_generated|w_result19w      ; |uni_shift_reg|lpm_mux:Mux13|mux_umc:auto_generated|w_result19w      ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux12|mux_umc:auto_generated|_~0              ; |uni_shift_reg|lpm_mux:Mux12|mux_umc:auto_generated|_~0              ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux12|mux_umc:auto_generated|_~1              ; |uni_shift_reg|lpm_mux:Mux12|mux_umc:auto_generated|_~1              ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux12|mux_umc:auto_generated|result_node[0]~0 ; |uni_shift_reg|lpm_mux:Mux12|mux_umc:auto_generated|result_node[0]~0 ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux12|mux_umc:auto_generated|_~2              ; |uni_shift_reg|lpm_mux:Mux12|mux_umc:auto_generated|_~2              ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux12|mux_umc:auto_generated|_~3              ; |uni_shift_reg|lpm_mux:Mux12|mux_umc:auto_generated|_~3              ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux12|mux_umc:auto_generated|result_node[0]~1 ; |uni_shift_reg|lpm_mux:Mux12|mux_umc:auto_generated|result_node[0]~1 ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux12|mux_umc:auto_generated|result_node[0]   ; |uni_shift_reg|lpm_mux:Mux12|mux_umc:auto_generated|result_node[0]   ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux12|mux_umc:auto_generated|_~4              ; |uni_shift_reg|lpm_mux:Mux12|mux_umc:auto_generated|_~4              ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux12|mux_umc:auto_generated|_~5              ; |uni_shift_reg|lpm_mux:Mux12|mux_umc:auto_generated|_~5              ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux12|mux_umc:auto_generated|_~6              ; |uni_shift_reg|lpm_mux:Mux12|mux_umc:auto_generated|_~6              ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux12|mux_umc:auto_generated|w_result19w~0    ; |uni_shift_reg|lpm_mux:Mux12|mux_umc:auto_generated|w_result19w~0    ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux12|mux_umc:auto_generated|_~7              ; |uni_shift_reg|lpm_mux:Mux12|mux_umc:auto_generated|_~7              ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux12|mux_umc:auto_generated|w_result19w~1    ; |uni_shift_reg|lpm_mux:Mux12|mux_umc:auto_generated|w_result19w~1    ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux12|mux_umc:auto_generated|w_result19w      ; |uni_shift_reg|lpm_mux:Mux12|mux_umc:auto_generated|w_result19w      ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux11|mux_umc:auto_generated|_~0              ; |uni_shift_reg|lpm_mux:Mux11|mux_umc:auto_generated|_~0              ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux11|mux_umc:auto_generated|_~1              ; |uni_shift_reg|lpm_mux:Mux11|mux_umc:auto_generated|_~1              ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux11|mux_umc:auto_generated|result_node[0]~0 ; |uni_shift_reg|lpm_mux:Mux11|mux_umc:auto_generated|result_node[0]~0 ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux11|mux_umc:auto_generated|_~2              ; |uni_shift_reg|lpm_mux:Mux11|mux_umc:auto_generated|_~2              ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux11|mux_umc:auto_generated|_~3              ; |uni_shift_reg|lpm_mux:Mux11|mux_umc:auto_generated|_~3              ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux11|mux_umc:auto_generated|result_node[0]~1 ; |uni_shift_reg|lpm_mux:Mux11|mux_umc:auto_generated|result_node[0]~1 ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux11|mux_umc:auto_generated|result_node[0]   ; |uni_shift_reg|lpm_mux:Mux11|mux_umc:auto_generated|result_node[0]   ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux11|mux_umc:auto_generated|_~4              ; |uni_shift_reg|lpm_mux:Mux11|mux_umc:auto_generated|_~4              ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux11|mux_umc:auto_generated|_~5              ; |uni_shift_reg|lpm_mux:Mux11|mux_umc:auto_generated|_~5              ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux11|mux_umc:auto_generated|_~6              ; |uni_shift_reg|lpm_mux:Mux11|mux_umc:auto_generated|_~6              ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux11|mux_umc:auto_generated|w_result19w~0    ; |uni_shift_reg|lpm_mux:Mux11|mux_umc:auto_generated|w_result19w~0    ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux11|mux_umc:auto_generated|_~7              ; |uni_shift_reg|lpm_mux:Mux11|mux_umc:auto_generated|_~7              ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux11|mux_umc:auto_generated|w_result19w~1    ; |uni_shift_reg|lpm_mux:Mux11|mux_umc:auto_generated|w_result19w~1    ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux11|mux_umc:auto_generated|w_result19w      ; |uni_shift_reg|lpm_mux:Mux11|mux_umc:auto_generated|w_result19w      ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux10|mux_umc:auto_generated|_~0              ; |uni_shift_reg|lpm_mux:Mux10|mux_umc:auto_generated|_~0              ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux10|mux_umc:auto_generated|_~1              ; |uni_shift_reg|lpm_mux:Mux10|mux_umc:auto_generated|_~1              ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux10|mux_umc:auto_generated|result_node[0]~0 ; |uni_shift_reg|lpm_mux:Mux10|mux_umc:auto_generated|result_node[0]~0 ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux10|mux_umc:auto_generated|_~2              ; |uni_shift_reg|lpm_mux:Mux10|mux_umc:auto_generated|_~2              ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux10|mux_umc:auto_generated|_~3              ; |uni_shift_reg|lpm_mux:Mux10|mux_umc:auto_generated|_~3              ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux10|mux_umc:auto_generated|result_node[0]~1 ; |uni_shift_reg|lpm_mux:Mux10|mux_umc:auto_generated|result_node[0]~1 ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux10|mux_umc:auto_generated|result_node[0]   ; |uni_shift_reg|lpm_mux:Mux10|mux_umc:auto_generated|result_node[0]   ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux10|mux_umc:auto_generated|_~4              ; |uni_shift_reg|lpm_mux:Mux10|mux_umc:auto_generated|_~4              ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux10|mux_umc:auto_generated|_~5              ; |uni_shift_reg|lpm_mux:Mux10|mux_umc:auto_generated|_~5              ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux10|mux_umc:auto_generated|_~6              ; |uni_shift_reg|lpm_mux:Mux10|mux_umc:auto_generated|_~6              ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux10|mux_umc:auto_generated|w_result19w~0    ; |uni_shift_reg|lpm_mux:Mux10|mux_umc:auto_generated|w_result19w~0    ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux10|mux_umc:auto_generated|_~7              ; |uni_shift_reg|lpm_mux:Mux10|mux_umc:auto_generated|_~7              ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux10|mux_umc:auto_generated|w_result19w~1    ; |uni_shift_reg|lpm_mux:Mux10|mux_umc:auto_generated|w_result19w~1    ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux10|mux_umc:auto_generated|w_result19w      ; |uni_shift_reg|lpm_mux:Mux10|mux_umc:auto_generated|w_result19w      ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux9|mux_umc:auto_generated|_~0               ; |uni_shift_reg|lpm_mux:Mux9|mux_umc:auto_generated|_~0               ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux9|mux_umc:auto_generated|_~1               ; |uni_shift_reg|lpm_mux:Mux9|mux_umc:auto_generated|_~1               ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux9|mux_umc:auto_generated|result_node[0]~0  ; |uni_shift_reg|lpm_mux:Mux9|mux_umc:auto_generated|result_node[0]~0  ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux9|mux_umc:auto_generated|_~2               ; |uni_shift_reg|lpm_mux:Mux9|mux_umc:auto_generated|_~2               ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux9|mux_umc:auto_generated|_~3               ; |uni_shift_reg|lpm_mux:Mux9|mux_umc:auto_generated|_~3               ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux9|mux_umc:auto_generated|result_node[0]~1  ; |uni_shift_reg|lpm_mux:Mux9|mux_umc:auto_generated|result_node[0]~1  ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux9|mux_umc:auto_generated|result_node[0]    ; |uni_shift_reg|lpm_mux:Mux9|mux_umc:auto_generated|result_node[0]    ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux9|mux_umc:auto_generated|_~4               ; |uni_shift_reg|lpm_mux:Mux9|mux_umc:auto_generated|_~4               ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux9|mux_umc:auto_generated|_~5               ; |uni_shift_reg|lpm_mux:Mux9|mux_umc:auto_generated|_~5               ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux9|mux_umc:auto_generated|_~6               ; |uni_shift_reg|lpm_mux:Mux9|mux_umc:auto_generated|_~6               ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux9|mux_umc:auto_generated|w_result19w~0     ; |uni_shift_reg|lpm_mux:Mux9|mux_umc:auto_generated|w_result19w~0     ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux9|mux_umc:auto_generated|_~7               ; |uni_shift_reg|lpm_mux:Mux9|mux_umc:auto_generated|_~7               ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux9|mux_umc:auto_generated|w_result19w~1     ; |uni_shift_reg|lpm_mux:Mux9|mux_umc:auto_generated|w_result19w~1     ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux9|mux_umc:auto_generated|w_result19w       ; |uni_shift_reg|lpm_mux:Mux9|mux_umc:auto_generated|w_result19w       ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux8|mux_umc:auto_generated|_~0               ; |uni_shift_reg|lpm_mux:Mux8|mux_umc:auto_generated|_~0               ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux8|mux_umc:auto_generated|_~1               ; |uni_shift_reg|lpm_mux:Mux8|mux_umc:auto_generated|_~1               ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux8|mux_umc:auto_generated|result_node[0]~0  ; |uni_shift_reg|lpm_mux:Mux8|mux_umc:auto_generated|result_node[0]~0  ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux8|mux_umc:auto_generated|_~2               ; |uni_shift_reg|lpm_mux:Mux8|mux_umc:auto_generated|_~2               ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux8|mux_umc:auto_generated|_~3               ; |uni_shift_reg|lpm_mux:Mux8|mux_umc:auto_generated|_~3               ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux8|mux_umc:auto_generated|result_node[0]~1  ; |uni_shift_reg|lpm_mux:Mux8|mux_umc:auto_generated|result_node[0]~1  ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux8|mux_umc:auto_generated|result_node[0]    ; |uni_shift_reg|lpm_mux:Mux8|mux_umc:auto_generated|result_node[0]    ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux8|mux_umc:auto_generated|_~4               ; |uni_shift_reg|lpm_mux:Mux8|mux_umc:auto_generated|_~4               ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux8|mux_umc:auto_generated|_~5               ; |uni_shift_reg|lpm_mux:Mux8|mux_umc:auto_generated|_~5               ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux8|mux_umc:auto_generated|_~6               ; |uni_shift_reg|lpm_mux:Mux8|mux_umc:auto_generated|_~6               ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux8|mux_umc:auto_generated|w_result19w~0     ; |uni_shift_reg|lpm_mux:Mux8|mux_umc:auto_generated|w_result19w~0     ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux8|mux_umc:auto_generated|_~7               ; |uni_shift_reg|lpm_mux:Mux8|mux_umc:auto_generated|_~7               ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux8|mux_umc:auto_generated|w_result19w~1     ; |uni_shift_reg|lpm_mux:Mux8|mux_umc:auto_generated|w_result19w~1     ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux8|mux_umc:auto_generated|w_result19w       ; |uni_shift_reg|lpm_mux:Mux8|mux_umc:auto_generated|w_result19w       ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux7|mux_umc:auto_generated|_~0               ; |uni_shift_reg|lpm_mux:Mux7|mux_umc:auto_generated|_~0               ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux7|mux_umc:auto_generated|_~1               ; |uni_shift_reg|lpm_mux:Mux7|mux_umc:auto_generated|_~1               ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux7|mux_umc:auto_generated|result_node[0]~0  ; |uni_shift_reg|lpm_mux:Mux7|mux_umc:auto_generated|result_node[0]~0  ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux7|mux_umc:auto_generated|_~2               ; |uni_shift_reg|lpm_mux:Mux7|mux_umc:auto_generated|_~2               ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux7|mux_umc:auto_generated|result_node[0]~1  ; |uni_shift_reg|lpm_mux:Mux7|mux_umc:auto_generated|result_node[0]~1  ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux7|mux_umc:auto_generated|result_node[0]    ; |uni_shift_reg|lpm_mux:Mux7|mux_umc:auto_generated|result_node[0]    ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux7|mux_umc:auto_generated|_~4               ; |uni_shift_reg|lpm_mux:Mux7|mux_umc:auto_generated|_~4               ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux7|mux_umc:auto_generated|_~5               ; |uni_shift_reg|lpm_mux:Mux7|mux_umc:auto_generated|_~5               ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux7|mux_umc:auto_generated|_~6               ; |uni_shift_reg|lpm_mux:Mux7|mux_umc:auto_generated|_~6               ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux7|mux_umc:auto_generated|w_result19w~0     ; |uni_shift_reg|lpm_mux:Mux7|mux_umc:auto_generated|w_result19w~0     ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux7|mux_umc:auto_generated|_~7               ; |uni_shift_reg|lpm_mux:Mux7|mux_umc:auto_generated|_~7               ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux7|mux_umc:auto_generated|w_result19w~1     ; |uni_shift_reg|lpm_mux:Mux7|mux_umc:auto_generated|w_result19w~1     ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux7|mux_umc:auto_generated|w_result19w       ; |uni_shift_reg|lpm_mux:Mux7|mux_umc:auto_generated|w_result19w       ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux6|mux_umc:auto_generated|_~0               ; |uni_shift_reg|lpm_mux:Mux6|mux_umc:auto_generated|_~0               ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux6|mux_umc:auto_generated|_~1               ; |uni_shift_reg|lpm_mux:Mux6|mux_umc:auto_generated|_~1               ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux6|mux_umc:auto_generated|result_node[0]~0  ; |uni_shift_reg|lpm_mux:Mux6|mux_umc:auto_generated|result_node[0]~0  ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux6|mux_umc:auto_generated|_~2               ; |uni_shift_reg|lpm_mux:Mux6|mux_umc:auto_generated|_~2               ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux6|mux_umc:auto_generated|result_node[0]~1  ; |uni_shift_reg|lpm_mux:Mux6|mux_umc:auto_generated|result_node[0]~1  ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux6|mux_umc:auto_generated|result_node[0]    ; |uni_shift_reg|lpm_mux:Mux6|mux_umc:auto_generated|result_node[0]    ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux6|mux_umc:auto_generated|_~4               ; |uni_shift_reg|lpm_mux:Mux6|mux_umc:auto_generated|_~4               ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux6|mux_umc:auto_generated|_~5               ; |uni_shift_reg|lpm_mux:Mux6|mux_umc:auto_generated|_~5               ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux6|mux_umc:auto_generated|_~6               ; |uni_shift_reg|lpm_mux:Mux6|mux_umc:auto_generated|_~6               ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux6|mux_umc:auto_generated|w_result19w~0     ; |uni_shift_reg|lpm_mux:Mux6|mux_umc:auto_generated|w_result19w~0     ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux6|mux_umc:auto_generated|_~7               ; |uni_shift_reg|lpm_mux:Mux6|mux_umc:auto_generated|_~7               ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux6|mux_umc:auto_generated|w_result19w~1     ; |uni_shift_reg|lpm_mux:Mux6|mux_umc:auto_generated|w_result19w~1     ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux6|mux_umc:auto_generated|w_result19w       ; |uni_shift_reg|lpm_mux:Mux6|mux_umc:auto_generated|w_result19w       ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux5|mux_umc:auto_generated|_~0               ; |uni_shift_reg|lpm_mux:Mux5|mux_umc:auto_generated|_~0               ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux5|mux_umc:auto_generated|_~1               ; |uni_shift_reg|lpm_mux:Mux5|mux_umc:auto_generated|_~1               ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux5|mux_umc:auto_generated|result_node[0]~0  ; |uni_shift_reg|lpm_mux:Mux5|mux_umc:auto_generated|result_node[0]~0  ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux5|mux_umc:auto_generated|_~2               ; |uni_shift_reg|lpm_mux:Mux5|mux_umc:auto_generated|_~2               ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux5|mux_umc:auto_generated|result_node[0]~1  ; |uni_shift_reg|lpm_mux:Mux5|mux_umc:auto_generated|result_node[0]~1  ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux5|mux_umc:auto_generated|result_node[0]    ; |uni_shift_reg|lpm_mux:Mux5|mux_umc:auto_generated|result_node[0]    ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux5|mux_umc:auto_generated|_~4               ; |uni_shift_reg|lpm_mux:Mux5|mux_umc:auto_generated|_~4               ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux5|mux_umc:auto_generated|_~5               ; |uni_shift_reg|lpm_mux:Mux5|mux_umc:auto_generated|_~5               ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux5|mux_umc:auto_generated|_~6               ; |uni_shift_reg|lpm_mux:Mux5|mux_umc:auto_generated|_~6               ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux5|mux_umc:auto_generated|w_result19w~0     ; |uni_shift_reg|lpm_mux:Mux5|mux_umc:auto_generated|w_result19w~0     ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux5|mux_umc:auto_generated|_~7               ; |uni_shift_reg|lpm_mux:Mux5|mux_umc:auto_generated|_~7               ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux5|mux_umc:auto_generated|w_result19w~1     ; |uni_shift_reg|lpm_mux:Mux5|mux_umc:auto_generated|w_result19w~1     ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux5|mux_umc:auto_generated|w_result19w       ; |uni_shift_reg|lpm_mux:Mux5|mux_umc:auto_generated|w_result19w       ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux4|mux_umc:auto_generated|_~0               ; |uni_shift_reg|lpm_mux:Mux4|mux_umc:auto_generated|_~0               ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux4|mux_umc:auto_generated|_~1               ; |uni_shift_reg|lpm_mux:Mux4|mux_umc:auto_generated|_~1               ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux4|mux_umc:auto_generated|_~2               ; |uni_shift_reg|lpm_mux:Mux4|mux_umc:auto_generated|_~2               ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux4|mux_umc:auto_generated|result_node[0]~1  ; |uni_shift_reg|lpm_mux:Mux4|mux_umc:auto_generated|result_node[0]~1  ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux4|mux_umc:auto_generated|result_node[0]    ; |uni_shift_reg|lpm_mux:Mux4|mux_umc:auto_generated|result_node[0]    ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux4|mux_umc:auto_generated|_~4               ; |uni_shift_reg|lpm_mux:Mux4|mux_umc:auto_generated|_~4               ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux4|mux_umc:auto_generated|_~5               ; |uni_shift_reg|lpm_mux:Mux4|mux_umc:auto_generated|_~5               ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux4|mux_umc:auto_generated|_~6               ; |uni_shift_reg|lpm_mux:Mux4|mux_umc:auto_generated|_~6               ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux4|mux_umc:auto_generated|w_result19w~0     ; |uni_shift_reg|lpm_mux:Mux4|mux_umc:auto_generated|w_result19w~0     ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux4|mux_umc:auto_generated|_~7               ; |uni_shift_reg|lpm_mux:Mux4|mux_umc:auto_generated|_~7               ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux4|mux_umc:auto_generated|w_result19w~1     ; |uni_shift_reg|lpm_mux:Mux4|mux_umc:auto_generated|w_result19w~1     ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux4|mux_umc:auto_generated|w_result19w       ; |uni_shift_reg|lpm_mux:Mux4|mux_umc:auto_generated|w_result19w       ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux3|mux_umc:auto_generated|_~0               ; |uni_shift_reg|lpm_mux:Mux3|mux_umc:auto_generated|_~0               ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux3|mux_umc:auto_generated|_~1               ; |uni_shift_reg|lpm_mux:Mux3|mux_umc:auto_generated|_~1               ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux3|mux_umc:auto_generated|_~2               ; |uni_shift_reg|lpm_mux:Mux3|mux_umc:auto_generated|_~2               ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux3|mux_umc:auto_generated|result_node[0]~1  ; |uni_shift_reg|lpm_mux:Mux3|mux_umc:auto_generated|result_node[0]~1  ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux3|mux_umc:auto_generated|result_node[0]    ; |uni_shift_reg|lpm_mux:Mux3|mux_umc:auto_generated|result_node[0]    ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux3|mux_umc:auto_generated|_~4               ; |uni_shift_reg|lpm_mux:Mux3|mux_umc:auto_generated|_~4               ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux3|mux_umc:auto_generated|_~5               ; |uni_shift_reg|lpm_mux:Mux3|mux_umc:auto_generated|_~5               ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux3|mux_umc:auto_generated|_~6               ; |uni_shift_reg|lpm_mux:Mux3|mux_umc:auto_generated|_~6               ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux3|mux_umc:auto_generated|w_result19w~0     ; |uni_shift_reg|lpm_mux:Mux3|mux_umc:auto_generated|w_result19w~0     ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux3|mux_umc:auto_generated|_~7               ; |uni_shift_reg|lpm_mux:Mux3|mux_umc:auto_generated|_~7               ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux3|mux_umc:auto_generated|w_result19w~1     ; |uni_shift_reg|lpm_mux:Mux3|mux_umc:auto_generated|w_result19w~1     ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux3|mux_umc:auto_generated|w_result19w       ; |uni_shift_reg|lpm_mux:Mux3|mux_umc:auto_generated|w_result19w       ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux2|mux_umc:auto_generated|_~1               ; |uni_shift_reg|lpm_mux:Mux2|mux_umc:auto_generated|_~1               ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux2|mux_umc:auto_generated|_~2               ; |uni_shift_reg|lpm_mux:Mux2|mux_umc:auto_generated|_~2               ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux2|mux_umc:auto_generated|result_node[0]~1  ; |uni_shift_reg|lpm_mux:Mux2|mux_umc:auto_generated|result_node[0]~1  ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux2|mux_umc:auto_generated|result_node[0]    ; |uni_shift_reg|lpm_mux:Mux2|mux_umc:auto_generated|result_node[0]    ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux2|mux_umc:auto_generated|_~4               ; |uni_shift_reg|lpm_mux:Mux2|mux_umc:auto_generated|_~4               ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux2|mux_umc:auto_generated|_~5               ; |uni_shift_reg|lpm_mux:Mux2|mux_umc:auto_generated|_~5               ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux2|mux_umc:auto_generated|_~6               ; |uni_shift_reg|lpm_mux:Mux2|mux_umc:auto_generated|_~6               ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux2|mux_umc:auto_generated|w_result19w~0     ; |uni_shift_reg|lpm_mux:Mux2|mux_umc:auto_generated|w_result19w~0     ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux2|mux_umc:auto_generated|_~7               ; |uni_shift_reg|lpm_mux:Mux2|mux_umc:auto_generated|_~7               ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux2|mux_umc:auto_generated|w_result19w~1     ; |uni_shift_reg|lpm_mux:Mux2|mux_umc:auto_generated|w_result19w~1     ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux2|mux_umc:auto_generated|w_result19w       ; |uni_shift_reg|lpm_mux:Mux2|mux_umc:auto_generated|w_result19w       ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux1|mux_umc:auto_generated|_~0               ; |uni_shift_reg|lpm_mux:Mux1|mux_umc:auto_generated|_~0               ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux1|mux_umc:auto_generated|_~1               ; |uni_shift_reg|lpm_mux:Mux1|mux_umc:auto_generated|_~1               ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux1|mux_umc:auto_generated|result_node[0]~0  ; |uni_shift_reg|lpm_mux:Mux1|mux_umc:auto_generated|result_node[0]~0  ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux1|mux_umc:auto_generated|_~2               ; |uni_shift_reg|lpm_mux:Mux1|mux_umc:auto_generated|_~2               ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux1|mux_umc:auto_generated|result_node[0]~1  ; |uni_shift_reg|lpm_mux:Mux1|mux_umc:auto_generated|result_node[0]~1  ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux1|mux_umc:auto_generated|result_node[0]    ; |uni_shift_reg|lpm_mux:Mux1|mux_umc:auto_generated|result_node[0]    ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux1|mux_umc:auto_generated|_~4               ; |uni_shift_reg|lpm_mux:Mux1|mux_umc:auto_generated|_~4               ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux1|mux_umc:auto_generated|_~5               ; |uni_shift_reg|lpm_mux:Mux1|mux_umc:auto_generated|_~5               ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux1|mux_umc:auto_generated|_~6               ; |uni_shift_reg|lpm_mux:Mux1|mux_umc:auto_generated|_~6               ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux1|mux_umc:auto_generated|w_result19w~0     ; |uni_shift_reg|lpm_mux:Mux1|mux_umc:auto_generated|w_result19w~0     ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux1|mux_umc:auto_generated|_~7               ; |uni_shift_reg|lpm_mux:Mux1|mux_umc:auto_generated|_~7               ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux1|mux_umc:auto_generated|w_result19w~1     ; |uni_shift_reg|lpm_mux:Mux1|mux_umc:auto_generated|w_result19w~1     ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux1|mux_umc:auto_generated|w_result19w       ; |uni_shift_reg|lpm_mux:Mux1|mux_umc:auto_generated|w_result19w       ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux0|mux_umc:auto_generated|_~0               ; |uni_shift_reg|lpm_mux:Mux0|mux_umc:auto_generated|_~0               ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux0|mux_umc:auto_generated|_~1               ; |uni_shift_reg|lpm_mux:Mux0|mux_umc:auto_generated|_~1               ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux0|mux_umc:auto_generated|_~2               ; |uni_shift_reg|lpm_mux:Mux0|mux_umc:auto_generated|_~2               ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux0|mux_umc:auto_generated|result_node[0]~1  ; |uni_shift_reg|lpm_mux:Mux0|mux_umc:auto_generated|result_node[0]~1  ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux0|mux_umc:auto_generated|result_node[0]    ; |uni_shift_reg|lpm_mux:Mux0|mux_umc:auto_generated|result_node[0]    ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux0|mux_umc:auto_generated|_~4               ; |uni_shift_reg|lpm_mux:Mux0|mux_umc:auto_generated|_~4               ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux0|mux_umc:auto_generated|_~5               ; |uni_shift_reg|lpm_mux:Mux0|mux_umc:auto_generated|_~5               ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux0|mux_umc:auto_generated|_~6               ; |uni_shift_reg|lpm_mux:Mux0|mux_umc:auto_generated|_~6               ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux0|mux_umc:auto_generated|w_result19w~0     ; |uni_shift_reg|lpm_mux:Mux0|mux_umc:auto_generated|w_result19w~0     ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux0|mux_umc:auto_generated|_~7               ; |uni_shift_reg|lpm_mux:Mux0|mux_umc:auto_generated|_~7               ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux0|mux_umc:auto_generated|w_result19w~1     ; |uni_shift_reg|lpm_mux:Mux0|mux_umc:auto_generated|w_result19w~1     ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux0|mux_umc:auto_generated|w_result19w       ; |uni_shift_reg|lpm_mux:Mux0|mux_umc:auto_generated|w_result19w       ; out0             ;
++----------------------------------------------------------------------+----------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                     ;
++---------------------------------------------------------------------+---------------------------------------------------------------------+------------------+
+; Node Name                                                           ; Output Port Name                                                    ; Output Port Type ;
++---------------------------------------------------------------------+---------------------------------------------------------------------+------------------+
+; |uni_shift_reg|RESET                                                ; |uni_shift_reg|RESET                                                ; out              ;
+; |uni_shift_reg|DATA_IN[8]                                           ; |uni_shift_reg|DATA_IN[8]                                           ; out              ;
+; |uni_shift_reg|DATA_IN[9]                                           ; |uni_shift_reg|DATA_IN[9]                                           ; out              ;
+; |uni_shift_reg|DATA_IN[10]                                          ; |uni_shift_reg|DATA_IN[10]                                          ; out              ;
+; |uni_shift_reg|DATA_IN[11]                                          ; |uni_shift_reg|DATA_IN[11]                                          ; out              ;
+; |uni_shift_reg|DATA_IN[12]                                          ; |uni_shift_reg|DATA_IN[12]                                          ; out              ;
+; |uni_shift_reg|DATA_IN[13]                                          ; |uni_shift_reg|DATA_IN[13]                                          ; out              ;
+; |uni_shift_reg|DATA_IN[14]                                          ; |uni_shift_reg|DATA_IN[14]                                          ; out              ;
+; |uni_shift_reg|DATA_IN[15]                                          ; |uni_shift_reg|DATA_IN[15]                                          ; out              ;
+; |uni_shift_reg|lpm_mux:Mux4|mux_umc:auto_generated|result_node[0]~0 ; |uni_shift_reg|lpm_mux:Mux4|mux_umc:auto_generated|result_node[0]~0 ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux3|mux_umc:auto_generated|result_node[0]~0 ; |uni_shift_reg|lpm_mux:Mux3|mux_umc:auto_generated|result_node[0]~0 ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux2|mux_umc:auto_generated|_~0              ; |uni_shift_reg|lpm_mux:Mux2|mux_umc:auto_generated|_~0              ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux2|mux_umc:auto_generated|result_node[0]~0 ; |uni_shift_reg|lpm_mux:Mux2|mux_umc:auto_generated|result_node[0]~0 ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux0|mux_umc:auto_generated|result_node[0]~0 ; |uni_shift_reg|lpm_mux:Mux0|mux_umc:auto_generated|result_node[0]~0 ; out0             ;
++---------------------------------------------------------------------+---------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                           ;
++--------------------------------------------------------+--------------------------------------------------------+------------------+
+; Node Name                                              ; Output Port Name                                       ; Output Port Type ;
++--------------------------------------------------------+--------------------------------------------------------+------------------+
+; |uni_shift_reg|DATA_IN[8]                              ; |uni_shift_reg|DATA_IN[8]                              ; out              ;
+; |uni_shift_reg|DATA_IN[9]                              ; |uni_shift_reg|DATA_IN[9]                              ; out              ;
+; |uni_shift_reg|DATA_IN[10]                             ; |uni_shift_reg|DATA_IN[10]                             ; out              ;
+; |uni_shift_reg|DATA_IN[11]                             ; |uni_shift_reg|DATA_IN[11]                             ; out              ;
+; |uni_shift_reg|DATA_IN[12]                             ; |uni_shift_reg|DATA_IN[12]                             ; out              ;
+; |uni_shift_reg|DATA_IN[13]                             ; |uni_shift_reg|DATA_IN[13]                             ; out              ;
+; |uni_shift_reg|DATA_IN[14]                             ; |uni_shift_reg|DATA_IN[14]                             ; out              ;
+; |uni_shift_reg|DATA_IN[15]                             ; |uni_shift_reg|DATA_IN[15]                             ; out              ;
+; |uni_shift_reg|lpm_mux:Mux7|mux_umc:auto_generated|_~3 ; |uni_shift_reg|lpm_mux:Mux7|mux_umc:auto_generated|_~3 ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux6|mux_umc:auto_generated|_~3 ; |uni_shift_reg|lpm_mux:Mux6|mux_umc:auto_generated|_~3 ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux5|mux_umc:auto_generated|_~3 ; |uni_shift_reg|lpm_mux:Mux5|mux_umc:auto_generated|_~3 ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux4|mux_umc:auto_generated|_~3 ; |uni_shift_reg|lpm_mux:Mux4|mux_umc:auto_generated|_~3 ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux3|mux_umc:auto_generated|_~3 ; |uni_shift_reg|lpm_mux:Mux3|mux_umc:auto_generated|_~3 ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux2|mux_umc:auto_generated|_~3 ; |uni_shift_reg|lpm_mux:Mux2|mux_umc:auto_generated|_~3 ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux1|mux_umc:auto_generated|_~3 ; |uni_shift_reg|lpm_mux:Mux1|mux_umc:auto_generated|_~3 ; out0             ;
+; |uni_shift_reg|lpm_mux:Mux0|mux_umc:auto_generated|_~3 ; |uni_shift_reg|lpm_mux:Mux0|mux_umc:auto_generated|_~3 ; out0             ;
++--------------------------------------------------------+--------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 7.2 Build 151 09/26/2007 SJ Full Version
+    Info: Processing started: Sun Jan 03 15:48:36 2016
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off uni_shift_reg -c uni_shift_reg
+Info: Using vector source file "D:/Quartus_Tests/askisi_6/uni_shift_reg/uni_shift_reg.vwf"
+Warning: Can't find signal in vector source file for input pin "|uni_shift_reg|DATA_IN[8]"
+Warning: Can't find signal in vector source file for input pin "|uni_shift_reg|DATA_IN[9]"
+Warning: Can't find signal in vector source file for input pin "|uni_shift_reg|DATA_IN[10]"
+Warning: Can't find signal in vector source file for input pin "|uni_shift_reg|DATA_IN[11]"
+Warning: Can't find signal in vector source file for input pin "|uni_shift_reg|DATA_IN[12]"
+Warning: Can't find signal in vector source file for input pin "|uni_shift_reg|DATA_IN[13]"
+Warning: Can't find signal in vector source file for input pin "|uni_shift_reg|DATA_IN[14]"
+Warning: Can't find signal in vector source file for input pin "|uni_shift_reg|DATA_IN[15]"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Warning: Found clock-sensitive change during active clock edge at time 40.0 ns on register "|uni_shift_reg|hold[0]"
+Warning: Found clock-sensitive change during active clock edge at time 40.0 ns on register "|uni_shift_reg|hold[15]"
+Warning: Found clock-sensitive change during active clock edge at time 40.0 ns on register "|uni_shift_reg|hold[14]"
+Warning: Found clock-sensitive change during active clock edge at time 40.0 ns on register "|uni_shift_reg|hold[8]"
+Warning: Found clock-sensitive change during active clock edge at time 40.0 ns on register "|uni_shift_reg|hold[7]"
+Warning: Found clock-sensitive change during active clock edge at time 40.0 ns on register "|uni_shift_reg|hold[6]"
+Warning: Found clock-sensitive change during active clock edge at time 80.0 ns on register "|uni_shift_reg|hold[13]"
+Warning: Found clock-sensitive change during active clock edge at time 80.0 ns on register "|uni_shift_reg|hold[5]"
+Warning: Found clock-sensitive change during active clock edge at time 80.0 ns on register "|uni_shift_reg|hold[4]"
+Warning: Found clock-sensitive change during active clock edge at time 80.0 ns on register "|uni_shift_reg|hold[2]"
+Warning: Found clock-sensitive change during active clock edge at time 120.0 ns on register "|uni_shift_reg|hold[9]"
+Warning: Found clock-sensitive change during active clock edge at time 120.0 ns on register "|uni_shift_reg|hold[1]"
+Warning: Found clock-sensitive change during active clock edge at time 160.0 ns on register "|uni_shift_reg|hold[3]"
+Warning: Found clock-sensitive change during active clock edge at time 520.0 ns on register "|uni_shift_reg|hold[12]"
+Warning: Found clock-sensitive change during active clock edge at time 520.0 ns on register "|uni_shift_reg|hold[11]"
+Warning: Found clock-sensitive change during active clock edge at time 520.0 ns on register "|uni_shift_reg|hold[10]"
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      92.06 %
+Info: Number of transitions in simulation is 16681
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 24 warnings
+    Info: Allocated 180 megabytes of memory during processing
+    Info: Processing ended: Sun Jan 03 15:49:18 2016
+    Info: Elapsed time: 00:00:42
+
+

@@ -1,0 +1,40 @@
+|counter_up
+clock => t_ff:TFF0.clk
+reset => t_ff:TFF3.rst
+reset => t_ff:TFF2.rst
+reset => t_ff:TFF1.rst
+reset => t_ff:TFF0.rst
+Q[0] <= t_ff:TFF0.q
+Q[1] <= t_ff:TFF1.q
+Q[2] <= t_ff:TFF2.q
+Q[3] <= t_ff:TFF3.q
+
+
+|counter_up|t_ff:TFF0
+t => q~reg0.ENA
+clk => q~reg0.CLK
+rst => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter_up|t_ff:TFF1
+t => q~reg0.ENA
+clk => q~reg0.CLK
+rst => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter_up|t_ff:TFF2
+t => q~reg0.ENA
+clk => q~reg0.CLK
+rst => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter_up|t_ff:TFF3
+t => q~reg0.ENA
+clk => q~reg0.CLK
+rst => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,11 @@
+|Full_Adder
+x => S2.IN0
+x => S1.IN0
+y => S2.IN1
+y => S1.IN1
+z => sum~0.IN0
+z => S3.IN0
+sum <= sum~0.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout~0.DB_MAX_OUTPUT_PORT_TYPE
+
+

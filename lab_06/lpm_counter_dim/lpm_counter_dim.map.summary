@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sat Dec 19 18:31:56 2015
+Quartus II Version : 7.2 Build 151 09/26/2007 SJ Full Version
+Revision Name : lpm_counter_dim
+Top-level Entity Name : lpm_counter_dim
+Family : Cyclone II
+Total logic elements : 41
+    Total combinational functions : 41
+    Dedicated logic registers : 8
+Total registers : 8
+Total pins : 22
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

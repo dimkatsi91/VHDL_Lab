@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Tue Oct 27 21:16:26 2015
+Quartus II 64-Bit Version : 7.2 Build 151 09/26/2007 SJ Full Version
+Revision Name : mux2_to_one
+Top-level Entity Name : mux2_to_one
+Family : Cyclone II
+Total logic elements : 1
+    Total combinational functions : 1
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 4
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

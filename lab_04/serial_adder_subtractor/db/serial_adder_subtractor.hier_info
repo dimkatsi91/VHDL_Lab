@@ -1,0 +1,242 @@
+|serial_adder_subtractor
+dataA[0] => shift_reg_str:REG_A.D_In[0]
+dataA[1] => shift_reg_str:REG_A.D_In[1]
+dataA[2] => shift_reg_str:REG_A.D_In[2]
+dataA[3] => shift_reg_str:REG_A.D_In[3]
+dataB[0] => shift_reg_str:REG_B.D_In[0]
+dataB[1] => shift_reg_str:REG_B.D_In[1]
+dataB[2] => shift_reg_str:REG_B.D_In[2]
+dataB[3] => shift_reg_str:REG_B.D_In[3]
+CLOCK => shift_reg_str:REG_SUM.CL
+CLOCK => D_FF:D_FLIP_FLOP.Cl
+CLOCK => shift_reg_str:REG_B.CL
+CLOCK => count[2].CLK
+CLOCK => count[1].CLK
+CLOCK => count[0].CLK
+CLOCK => shift_reg_str:REG_A.CL
+RESET => shift_reg_str:REG_SUM.L
+RESET => D_FF:D_FLIP_FLOP.L
+RESET => shift_reg_str:REG_B.L
+RESET => count[2].PRESET
+RESET => count[1].ACLR
+RESET => count[0].ACLR
+RESET => shift_reg_str:REG_A.L
+mode => D_FF:D_FLIP_FLOP.L_value
+mode => S1.IN1
+DATA_Out_A[0] <= shift_reg_str:REG_A.d[0]
+DATA_Out_A[1] <= shift_reg_str:REG_A.d[1]
+DATA_Out_A[2] <= shift_reg_str:REG_A.d[2]
+DATA_Out_A[3] <= shift_reg_str:REG_A.d[3]
+DATA_Out_B[0] <= shift_reg_str:REG_B.d[0]
+DATA_Out_B[1] <= shift_reg_str:REG_B.d[1]
+DATA_Out_B[2] <= shift_reg_str:REG_B.d[2]
+DATA_Out_B[3] <= shift_reg_str:REG_B.d[3]
+SUM[0] <= shift_reg_str:REG_SUM.d[0]
+SUM[1] <= shift_reg_str:REG_SUM.d[1]
+SUM[2] <= shift_reg_str:REG_SUM.d[2]
+SUM[3] <= shift_reg_str:REG_SUM.d[3]
+
+
+|serial_adder_subtractor|shift_reg_str:REG_A
+CL => D_FF:X:0:DFF.Cl
+CL => D_FF:X:1:DFF.Cl
+CL => D_FF:X:2:DFF.Cl
+CL => D_FF:X:3:DFF.Cl
+E => D_FF:X:0:DFF.E
+E => D_FF:X:1:DFF.E
+E => D_FF:X:2:DFF.E
+E => D_FF:X:3:DFF.E
+L => D_FF:X:0:DFF.L
+L => D_FF:X:1:DFF.L
+L => D_FF:X:2:DFF.L
+L => D_FF:X:3:DFF.L
+S_In => D_FF:X:3:DFF.D
+D_In[0] => D_FF:X:0:DFF.L_value
+D_In[1] => D_FF:X:1:DFF.L_value
+D_In[2] => D_FF:X:2:DFF.L_value
+D_In[3] => D_FF:X:3:DFF.L_value
+S_Out <= D_FF:X:0:DFF.Q
+d[0] <= D_FF:X:0:DFF.Q
+d[1] <= D_FF:X:1:DFF.Q
+d[2] <= D_FF:X:2:DFF.Q
+d[3] <= D_FF:X:3:DFF.Q
+
+
+|serial_adder_subtractor|shift_reg_str:REG_A|D_FF:\X:3:DFF
+Cl => Q~reg0.CLK
+E => Q~reg0.ENA
+L => Q~0.OUTPUTSELECT
+D => Q~0.DATAA
+L_value => Q~0.DATAB
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|serial_adder_subtractor|shift_reg_str:REG_A|D_FF:\X:2:DFF
+Cl => Q~reg0.CLK
+E => Q~reg0.ENA
+L => Q~0.OUTPUTSELECT
+D => Q~0.DATAA
+L_value => Q~0.DATAB
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|serial_adder_subtractor|shift_reg_str:REG_A|D_FF:\X:1:DFF
+Cl => Q~reg0.CLK
+E => Q~reg0.ENA
+L => Q~0.OUTPUTSELECT
+D => Q~0.DATAA
+L_value => Q~0.DATAB
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|serial_adder_subtractor|shift_reg_str:REG_A|D_FF:\X:0:DFF
+Cl => Q~reg0.CLK
+E => Q~reg0.ENA
+L => Q~0.OUTPUTSELECT
+D => Q~0.DATAA
+L_value => Q~0.DATAB
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|serial_adder_subtractor|shift_reg_str:REG_B
+CL => D_FF:X:0:DFF.Cl
+CL => D_FF:X:1:DFF.Cl
+CL => D_FF:X:2:DFF.Cl
+CL => D_FF:X:3:DFF.Cl
+E => D_FF:X:0:DFF.E
+E => D_FF:X:1:DFF.E
+E => D_FF:X:2:DFF.E
+E => D_FF:X:3:DFF.E
+L => D_FF:X:0:DFF.L
+L => D_FF:X:1:DFF.L
+L => D_FF:X:2:DFF.L
+L => D_FF:X:3:DFF.L
+S_In => D_FF:X:3:DFF.D
+D_In[0] => D_FF:X:0:DFF.L_value
+D_In[1] => D_FF:X:1:DFF.L_value
+D_In[2] => D_FF:X:2:DFF.L_value
+D_In[3] => D_FF:X:3:DFF.L_value
+S_Out <= D_FF:X:0:DFF.Q
+d[0] <= D_FF:X:0:DFF.Q
+d[1] <= D_FF:X:1:DFF.Q
+d[2] <= D_FF:X:2:DFF.Q
+d[3] <= D_FF:X:3:DFF.Q
+
+
+|serial_adder_subtractor|shift_reg_str:REG_B|D_FF:\X:3:DFF
+Cl => Q~reg0.CLK
+E => Q~reg0.ENA
+L => Q~0.OUTPUTSELECT
+D => Q~0.DATAA
+L_value => Q~0.DATAB
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|serial_adder_subtractor|shift_reg_str:REG_B|D_FF:\X:2:DFF
+Cl => Q~reg0.CLK
+E => Q~reg0.ENA
+L => Q~0.OUTPUTSELECT
+D => Q~0.DATAA
+L_value => Q~0.DATAB
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|serial_adder_subtractor|shift_reg_str:REG_B|D_FF:\X:1:DFF
+Cl => Q~reg0.CLK
+E => Q~reg0.ENA
+L => Q~0.OUTPUTSELECT
+D => Q~0.DATAA
+L_value => Q~0.DATAB
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|serial_adder_subtractor|shift_reg_str:REG_B|D_FF:\X:0:DFF
+Cl => Q~reg0.CLK
+E => Q~reg0.ENA
+L => Q~0.OUTPUTSELECT
+D => Q~0.DATAA
+L_value => Q~0.DATAB
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|serial_adder_subtractor|Full_Adder:F_A
+x => S2.IN0
+x => S1.IN0
+y => S2.IN1
+y => S1.IN1
+z => sum~0.IN0
+z => S3.IN0
+sum <= sum~0.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|serial_adder_subtractor|D_FF:D_FLIP_FLOP
+Cl => Q~reg0.CLK
+E => Q~reg0.ENA
+L => Q~0.OUTPUTSELECT
+D => Q~0.DATAA
+L_value => Q~0.DATAB
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|serial_adder_subtractor|shift_reg_str:REG_SUM
+CL => D_FF:X:0:DFF.Cl
+CL => D_FF:X:1:DFF.Cl
+CL => D_FF:X:2:DFF.Cl
+CL => D_FF:X:3:DFF.Cl
+E => D_FF:X:0:DFF.E
+E => D_FF:X:1:DFF.E
+E => D_FF:X:2:DFF.E
+E => D_FF:X:3:DFF.E
+L => D_FF:X:0:DFF.L
+L => D_FF:X:1:DFF.L
+L => D_FF:X:2:DFF.L
+L => D_FF:X:3:DFF.L
+S_In => D_FF:X:3:DFF.D
+D_In[0] => D_FF:X:0:DFF.L_value
+D_In[1] => D_FF:X:1:DFF.L_value
+D_In[2] => D_FF:X:2:DFF.L_value
+D_In[3] => D_FF:X:3:DFF.L_value
+S_Out <= D_FF:X:0:DFF.Q
+d[0] <= D_FF:X:0:DFF.Q
+d[1] <= D_FF:X:1:DFF.Q
+d[2] <= D_FF:X:2:DFF.Q
+d[3] <= D_FF:X:3:DFF.Q
+
+
+|serial_adder_subtractor|shift_reg_str:REG_SUM|D_FF:\X:3:DFF
+Cl => Q~reg0.CLK
+E => Q~reg0.ENA
+L => Q~0.OUTPUTSELECT
+D => Q~0.DATAA
+L_value => Q~0.DATAB
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|serial_adder_subtractor|shift_reg_str:REG_SUM|D_FF:\X:2:DFF
+Cl => Q~reg0.CLK
+E => Q~reg0.ENA
+L => Q~0.OUTPUTSELECT
+D => Q~0.DATAA
+L_value => Q~0.DATAB
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|serial_adder_subtractor|shift_reg_str:REG_SUM|D_FF:\X:1:DFF
+Cl => Q~reg0.CLK
+E => Q~reg0.ENA
+L => Q~0.OUTPUTSELECT
+D => Q~0.DATAA
+L_value => Q~0.DATAB
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|serial_adder_subtractor|shift_reg_str:REG_SUM|D_FF:\X:0:DFF
+Cl => Q~reg0.CLK
+E => Q~reg0.ENA
+L => Q~0.OUTPUTSELECT
+D => Q~0.DATAA
+L_value => Q~0.DATAB
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

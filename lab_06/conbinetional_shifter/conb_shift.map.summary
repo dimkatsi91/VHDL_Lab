@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sat Jan 09 16:34:26 2016
+Quartus II 64-Bit Version : 7.2 Build 151 09/26/2007 SJ Full Version
+Revision Name : conb_shift
+Top-level Entity Name : conb_shift
+Family : Cyclone II
+Total logic elements : 47
+    Total combinational functions : 47
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 21
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

@@ -1,0 +1,17 @@
+Flow Status : Successful - Thu Oct 15 20:16:25 2015
+Quartus II Version : 7.2 Build 151 09/26/2007 SJ Full Version
+Revision Name : Full_adder
+Top-level Entity Name : Full_adder
+Family : Cyclone II
+Device : EP2C35F672C6
+Timing Models : Final
+Met timing requirements : N/A
+Total logic elements : N/A until Partition Merge
+    Total combinational functions : N/A until Partition Merge
+    Dedicated logic registers : N/A until Partition Merge
+Total registers : N/A until Partition Merge
+Total pins : N/A until Partition Merge
+Total virtual pins : N/A until Partition Merge
+Total memory bits : N/A until Partition Merge
+Embedded Multiplier 9-bit elements : N/A until Partition Merge
+Total PLLs : N/A until Partition Merge

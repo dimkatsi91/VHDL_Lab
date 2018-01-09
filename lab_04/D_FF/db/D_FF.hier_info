@@ -1,0 +1,9 @@
+|D_FF
+Clock => Q~reg0.CLK
+Enable => Q~reg0.ENA
+Load => Q~0.OUTPUTSELECT
+D => Q~0.DATAA
+L_value => Q~0.DATAB
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

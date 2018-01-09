@@ -1,0 +1,94 @@
+|lpm_counter_dim
+CLEAR => lpm_counter:my_counter.aclr
+LOAD => lpm_counter:my_counter.aload
+clk_en => lpm_counter:my_counter.clk_en
+CLK => lpm_counter:my_counter.clock
+EN_COUNT => lpm_counter:my_counter.cnt_en
+D[0] => lpm_counter:my_counter.data[0]
+D[1] => lpm_counter:my_counter.data[1]
+D[2] => lpm_counter:my_counter.data[2]
+D[3] => lpm_counter:my_counter.data[3]
+D[4] => lpm_counter:my_counter.data[4]
+D[5] => lpm_counter:my_counter.data[5]
+D[6] => lpm_counter:my_counter.data[6]
+D[7] => lpm_counter:my_counter.data[7]
+UP_DOWN => lpm_counter:my_counter.updown
+Q[0] <= lpm_counter:my_counter.q[0]
+Q[1] <= lpm_counter:my_counter.q[1]
+Q[2] <= lpm_counter:my_counter.q[2]
+Q[3] <= lpm_counter:my_counter.q[3]
+Q[4] <= lpm_counter:my_counter.q[4]
+Q[5] <= lpm_counter:my_counter.q[5]
+Q[6] <= lpm_counter:my_counter.q[6]
+Q[7] <= lpm_counter:my_counter.q[7]
+
+
+|lpm_counter_dim|lpm_counter:my_counter
+clock => cntr_72j:auto_generated.clock
+clk_en => cntr_72j:auto_generated.clk_en
+cnt_en => cntr_72j:auto_generated.cnt_en
+updown => cntr_72j:auto_generated.updown
+aclr => cntr_72j:auto_generated.aclr
+aset => ~NO_FANOUT~
+aconst => ~NO_FANOUT~
+aload => cntr_72j:auto_generated.aload
+sclr => ~NO_FANOUT~
+sset => ~NO_FANOUT~
+sconst => ~NO_FANOUT~
+sload => ~NO_FANOUT~
+data[0] => cntr_72j:auto_generated.data[0]
+data[1] => cntr_72j:auto_generated.data[1]
+data[2] => cntr_72j:auto_generated.data[2]
+data[3] => cntr_72j:auto_generated.data[3]
+data[4] => cntr_72j:auto_generated.data[4]
+data[5] => cntr_72j:auto_generated.data[5]
+data[6] => cntr_72j:auto_generated.data[6]
+data[7] => cntr_72j:auto_generated.data[7]
+cin => ~NO_FANOUT~
+q[0] <= cntr_72j:auto_generated.q[0]
+q[1] <= cntr_72j:auto_generated.q[1]
+q[2] <= cntr_72j:auto_generated.q[2]
+q[3] <= cntr_72j:auto_generated.q[3]
+q[4] <= cntr_72j:auto_generated.q[4]
+q[5] <= cntr_72j:auto_generated.q[5]
+q[6] <= cntr_72j:auto_generated.q[6]
+q[7] <= cntr_72j:auto_generated.q[7]
+cout <= <GND>
+eq[0] <= <GND>
+eq[1] <= <GND>
+eq[2] <= <GND>
+eq[3] <= <GND>
+eq[4] <= <GND>
+eq[5] <= <GND>
+eq[6] <= <GND>
+eq[7] <= <GND>
+eq[8] <= <GND>
+eq[9] <= <GND>
+eq[10] <= <GND>
+eq[11] <= <GND>
+eq[12] <= <GND>
+eq[13] <= <GND>
+eq[14] <= <GND>
+eq[15] <= <GND>
+
+
+|lpm_counter_dim|lpm_counter:my_counter|cntr_72j:auto_generated
+aload => aclr_actual.IN1
+clock => counter_reg_bit1a[7].CLK
+clock => counter_reg_bit1a[6].CLK
+clock => counter_reg_bit1a[5].CLK
+clock => counter_reg_bit1a[4].CLK
+clock => counter_reg_bit1a[3].CLK
+clock => counter_reg_bit1a[2].CLK
+clock => counter_reg_bit1a[1].CLK
+clock => counter_reg_bit1a[0].CLK
+q[0] <= safe_q[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= safe_q[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= safe_q[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= safe_q[3].DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= safe_q[4].DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= safe_q[5].DB_MAX_OUTPUT_PORT_TYPE
+q[6] <= safe_q[6].DB_MAX_OUTPUT_PORT_TYPE
+q[7] <= safe_q[7].DB_MAX_OUTPUT_PORT_TYPE
+
+

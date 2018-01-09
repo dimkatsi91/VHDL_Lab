@@ -1,0 +1,28 @@
+|shift_reg_behav
+CL => d[3]~reg0.CLK
+CL => d[2]~reg0.CLK
+CL => d[1]~reg0.CLK
+CL => d[0]~reg0.CLK
+CL => S_Out~reg0.CLK
+E => S_Out~reg0.ENA
+E => d[0]~reg0.ENA
+E => d[1]~reg0.ENA
+E => d[2]~reg0.ENA
+E => d[3]~reg0.ENA
+L => S_Out~0.OUTPUTSELECT
+L => d~3.OUTPUTSELECT
+L => d~2.OUTPUTSELECT
+L => d~1.OUTPUTSELECT
+L => d~0.OUTPUTSELECT
+S_In => d~0.DATAA
+D_In[0] => d~3.DATAB
+D_In[1] => d~2.DATAB
+D_In[2] => d~1.DATAB
+D_In[3] => d~0.DATAB
+S_Out <= S_Out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+d[0] <= d[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+d[1] <= d[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+d[2] <= d[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+d[3] <= d[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

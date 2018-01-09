@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Tue Nov 17 15:23:04 2015
+Quartus II Version : 7.2 Build 151 09/26/2007 SJ Full Version
+Revision Name : N_bit_reg
+Top-level Entity Name : N_bit_reg
+Family : Cyclone II
+Total logic elements : 8
+    Total combinational functions : 0
+    Dedicated logic registers : 8
+Total registers : 8
+Total pins : 18
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

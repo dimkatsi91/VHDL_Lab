@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="lpm_counter_dim">
+		<CBX_INST_ENTRY INSTANCE_NAME="|lpm_counter_dim|lpm_counter:my_counter" CBX_FILE_NAME="cntr_72j.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

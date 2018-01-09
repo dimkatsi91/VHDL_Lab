@@ -1,0 +1,255 @@
+Simulator report for presettable_up_down_counter
+Sat Dec 19 14:57:39 2015
+Quartus II 64-Bit Version 7.2 Build 151 09/26/2007 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2007 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 80 nodes     ;
+; Simulation Coverage         ;      66.25 % ;
+; Total Number of Transitions ; 1230         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                           ;
++--------------------------------------------------------------------------------------------+---------------------------------+---------------+
+; Option                                                                                     ; Setting                         ; Default Value ;
++--------------------------------------------------------------------------------------------+---------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                      ; Timing        ;
+; Start time                                                                                 ; 0 ns                            ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF                            ;               ;
+; Vector input source                                                                        ; presettable_up_down_counter.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                              ; On            ;
+; Check outputs                                                                              ; Off                             ; Off           ;
+; Report simulation coverage                                                                 ; On                              ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                              ; On            ;
+; Display missing 1-value coverage report                                                    ; On                              ; On            ;
+; Display missing 0-value coverage report                                                    ; On                              ; On            ;
+; Detect setup and hold time violations                                                      ; Off                             ; Off           ;
+; Detect glitches                                                                            ; Off                             ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                             ; Off           ;
+; Generate Signal Activity File                                                              ; Off                             ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                             ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                             ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                              ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                      ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                             ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                             ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                            ; Auto          ;
++--------------------------------------------------------------------------------------------+---------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      66.25 % ;
+; Total nodes checked                                 ; 80           ;
+; Total output ports checked                          ; 80           ;
+; Total output ports with complete 1/0-value coverage ; 53           ;
+; Total output ports with no 1/0-value coverage       ; 10           ;
+; Total output ports with no 1-value coverage         ; 12           ;
+; Total output ports with no 0-value coverage         ; 25           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                          ;
++-----------------------------------------+-----------------------------------------+------------------+
+; Node Name                               ; Output Port Name                        ; Output Port Type ;
++-----------------------------------------+-----------------------------------------+------------------+
+; |presettable_up_down_counter|Q[0]~reg0  ; |presettable_up_down_counter|Q[0]~reg0  ; regout           ;
+; |presettable_up_down_counter|process0~1 ; |presettable_up_down_counter|process0~1 ; out0             ;
+; |presettable_up_down_counter|Q~2        ; |presettable_up_down_counter|Q~2        ; out              ;
+; |presettable_up_down_counter|Q~5        ; |presettable_up_down_counter|Q~5        ; out              ;
+; |presettable_up_down_counter|Q~6        ; |presettable_up_down_counter|Q~6        ; out              ;
+; |presettable_up_down_counter|Q~7        ; |presettable_up_down_counter|Q~7        ; out              ;
+; |presettable_up_down_counter|Q~8        ; |presettable_up_down_counter|Q~8        ; out              ;
+; |presettable_up_down_counter|Q~10       ; |presettable_up_down_counter|Q~10       ; out              ;
+; |presettable_up_down_counter|Q~13       ; |presettable_up_down_counter|Q~13       ; out              ;
+; |presettable_up_down_counter|Q~14       ; |presettable_up_down_counter|Q~14       ; out              ;
+; |presettable_up_down_counter|Q~15       ; |presettable_up_down_counter|Q~15       ; out              ;
+; |presettable_up_down_counter|Q~16       ; |presettable_up_down_counter|Q~16       ; out              ;
+; |presettable_up_down_counter|Q[6]~reg0  ; |presettable_up_down_counter|Q[6]~reg0  ; regout           ;
+; |presettable_up_down_counter|Q[2]~reg0  ; |presettable_up_down_counter|Q[2]~reg0  ; regout           ;
+; |presettable_up_down_counter|Q[1]~reg0  ; |presettable_up_down_counter|Q[1]~reg0  ; regout           ;
+; |presettable_up_down_counter|Q[7]~0     ; |presettable_up_down_counter|Q[7]~0     ; out0             ;
+; |presettable_up_down_counter|CLK        ; |presettable_up_down_counter|CLK        ; out              ;
+; |presettable_up_down_counter|CLEAR      ; |presettable_up_down_counter|CLEAR      ; out              ;
+; |presettable_up_down_counter|LOAD       ; |presettable_up_down_counter|LOAD       ; out              ;
+; |presettable_up_down_counter|EN_COUNT   ; |presettable_up_down_counter|EN_COUNT   ; out              ;
+; |presettable_up_down_counter|D[0]       ; |presettable_up_down_counter|D[0]       ; out              ;
+; |presettable_up_down_counter|D[1]       ; |presettable_up_down_counter|D[1]       ; out              ;
+; |presettable_up_down_counter|D[2]       ; |presettable_up_down_counter|D[2]       ; out              ;
+; |presettable_up_down_counter|D[3]       ; |presettable_up_down_counter|D[3]       ; out              ;
+; |presettable_up_down_counter|D[4]       ; |presettable_up_down_counter|D[4]       ; out              ;
+; |presettable_up_down_counter|D[5]       ; |presettable_up_down_counter|D[5]       ; out              ;
+; |presettable_up_down_counter|D[6]       ; |presettable_up_down_counter|D[6]       ; out              ;
+; |presettable_up_down_counter|D[7]       ; |presettable_up_down_counter|D[7]       ; out              ;
+; |presettable_up_down_counter|Q[0]       ; |presettable_up_down_counter|Q[0]       ; pin_out          ;
+; |presettable_up_down_counter|Q[1]       ; |presettable_up_down_counter|Q[1]       ; pin_out          ;
+; |presettable_up_down_counter|Q[2]       ; |presettable_up_down_counter|Q[2]       ; pin_out          ;
+; |presettable_up_down_counter|Q[6]       ; |presettable_up_down_counter|Q[6]       ; pin_out          ;
+; |presettable_up_down_counter|Add0~40    ; |presettable_up_down_counter|Add0~40    ; out0             ;
+; |presettable_up_down_counter|Add0~41    ; |presettable_up_down_counter|Add0~41    ; out0             ;
+; |presettable_up_down_counter|Add0~42    ; |presettable_up_down_counter|Add0~42    ; out0             ;
+; |presettable_up_down_counter|Add0~50    ; |presettable_up_down_counter|Add0~50    ; out0             ;
+; |presettable_up_down_counter|Add1~45    ; |presettable_up_down_counter|Add1~45    ; out0             ;
+; |presettable_up_down_counter|Add1~46    ; |presettable_up_down_counter|Add1~46    ; out0             ;
+; |presettable_up_down_counter|Add1~47    ; |presettable_up_down_counter|Add1~47    ; out0             ;
+; |presettable_up_down_counter|Add1~48    ; |presettable_up_down_counter|Add1~48    ; out0             ;
+; |presettable_up_down_counter|Add1~49    ; |presettable_up_down_counter|Add1~49    ; out0             ;
+; |presettable_up_down_counter|Add1~50    ; |presettable_up_down_counter|Add1~50    ; out0             ;
+; |presettable_up_down_counter|Add1~51    ; |presettable_up_down_counter|Add1~51    ; out0             ;
+; |presettable_up_down_counter|Add1~52    ; |presettable_up_down_counter|Add1~52    ; out0             ;
+; |presettable_up_down_counter|Add1~53    ; |presettable_up_down_counter|Add1~53    ; out0             ;
+; |presettable_up_down_counter|Add1~54    ; |presettable_up_down_counter|Add1~54    ; out0             ;
+; |presettable_up_down_counter|Add1~55    ; |presettable_up_down_counter|Add1~55    ; out0             ;
+; |presettable_up_down_counter|Add1~57    ; |presettable_up_down_counter|Add1~57    ; out0             ;
+; |presettable_up_down_counter|Add1~58    ; |presettable_up_down_counter|Add1~58    ; out0             ;
+; |presettable_up_down_counter|Add1~60    ; |presettable_up_down_counter|Add1~60    ; out0             ;
+; |presettable_up_down_counter|Add1~61    ; |presettable_up_down_counter|Add1~61    ; out0             ;
+; |presettable_up_down_counter|Add1~62    ; |presettable_up_down_counter|Add1~62    ; out0             ;
+; |presettable_up_down_counter|Add1~63    ; |presettable_up_down_counter|Add1~63    ; out0             ;
++-----------------------------------------+-----------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                             ;
++-----------------------------------------+-----------------------------------------+------------------+
+; Node Name                               ; Output Port Name                        ; Output Port Type ;
++-----------------------------------------+-----------------------------------------+------------------+
+; |presettable_up_down_counter|process0~0 ; |presettable_up_down_counter|process0~0 ; out0             ;
+; |presettable_up_down_counter|Q~1        ; |presettable_up_down_counter|Q~1        ; out              ;
+; |presettable_up_down_counter|Q~9        ; |presettable_up_down_counter|Q~9        ; out              ;
+; |presettable_up_down_counter|Q[7]~reg0  ; |presettable_up_down_counter|Q[7]~reg0  ; regout           ;
+; |presettable_up_down_counter|UP_DOWN    ; |presettable_up_down_counter|UP_DOWN    ; out              ;
+; |presettable_up_down_counter|Q[7]       ; |presettable_up_down_counter|Q[7]       ; pin_out          ;
+; |presettable_up_down_counter|Add0~43    ; |presettable_up_down_counter|Add0~43    ; out0             ;
+; |presettable_up_down_counter|Add0~45    ; |presettable_up_down_counter|Add0~45    ; out0             ;
+; |presettable_up_down_counter|Add0~47    ; |presettable_up_down_counter|Add0~47    ; out0             ;
+; |presettable_up_down_counter|Add0~49    ; |presettable_up_down_counter|Add0~49    ; out0             ;
+; |presettable_up_down_counter|Add0~51    ; |presettable_up_down_counter|Add0~51    ; out0             ;
+; |presettable_up_down_counter|Add0~52    ; |presettable_up_down_counter|Add0~52    ; out0             ;
++-----------------------------------------+-----------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                           ;
++----------------------------------------+----------------------------------------+------------------+
+; Node Name                              ; Output Port Name                       ; Output Port Type ;
++----------------------------------------+----------------------------------------+------------------+
+; |presettable_up_down_counter|Q~1       ; |presettable_up_down_counter|Q~1       ; out              ;
+; |presettable_up_down_counter|Q~3       ; |presettable_up_down_counter|Q~3       ; out              ;
+; |presettable_up_down_counter|Q~4       ; |presettable_up_down_counter|Q~4       ; out              ;
+; |presettable_up_down_counter|Q~9       ; |presettable_up_down_counter|Q~9       ; out              ;
+; |presettable_up_down_counter|Q~11      ; |presettable_up_down_counter|Q~11      ; out              ;
+; |presettable_up_down_counter|Q~12      ; |presettable_up_down_counter|Q~12      ; out              ;
+; |presettable_up_down_counter|Q[7]~reg0 ; |presettable_up_down_counter|Q[7]~reg0 ; regout           ;
+; |presettable_up_down_counter|Q[5]~reg0 ; |presettable_up_down_counter|Q[5]~reg0 ; regout           ;
+; |presettable_up_down_counter|Q[4]~reg0 ; |presettable_up_down_counter|Q[4]~reg0 ; regout           ;
+; |presettable_up_down_counter|Q[3]~reg0 ; |presettable_up_down_counter|Q[3]~reg0 ; regout           ;
+; |presettable_up_down_counter|Q[3]      ; |presettable_up_down_counter|Q[3]      ; pin_out          ;
+; |presettable_up_down_counter|Q[4]      ; |presettable_up_down_counter|Q[4]      ; pin_out          ;
+; |presettable_up_down_counter|Q[5]      ; |presettable_up_down_counter|Q[5]      ; pin_out          ;
+; |presettable_up_down_counter|Q[7]      ; |presettable_up_down_counter|Q[7]      ; pin_out          ;
+; |presettable_up_down_counter|Add0~43   ; |presettable_up_down_counter|Add0~43   ; out0             ;
+; |presettable_up_down_counter|Add0~44   ; |presettable_up_down_counter|Add0~44   ; out0             ;
+; |presettable_up_down_counter|Add0~45   ; |presettable_up_down_counter|Add0~45   ; out0             ;
+; |presettable_up_down_counter|Add0~46   ; |presettable_up_down_counter|Add0~46   ; out0             ;
+; |presettable_up_down_counter|Add0~47   ; |presettable_up_down_counter|Add0~47   ; out0             ;
+; |presettable_up_down_counter|Add0~48   ; |presettable_up_down_counter|Add0~48   ; out0             ;
+; |presettable_up_down_counter|Add0~49   ; |presettable_up_down_counter|Add0~49   ; out0             ;
+; |presettable_up_down_counter|Add0~51   ; |presettable_up_down_counter|Add0~51   ; out0             ;
+; |presettable_up_down_counter|Add0~52   ; |presettable_up_down_counter|Add0~52   ; out0             ;
+; |presettable_up_down_counter|Add1~56   ; |presettable_up_down_counter|Add1~56   ; out0             ;
+; |presettable_up_down_counter|Add1~59   ; |presettable_up_down_counter|Add1~59   ; out0             ;
++----------------------------------------+----------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 7.2 Build 151 09/26/2007 SJ Full Version
+    Info: Processing started: Sat Dec 19 14:56:52 2015
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off presettable_up_down_counter -c presettable_up_down_counter
+Info: Using vector source file "D:/Quartus_Tests/askisi_6/presettable_up_down_counter/presettable_up_down_counter.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Warning: Found clock-sensitive change during active clock edge at time 30.0 ns on register "|presettable_up_down_counter|Q[0]~reg0"
+Warning: Found clock-sensitive change during active clock edge at time 30.0 ns on register "|presettable_up_down_counter|Q[6]~reg0"
+Warning: Found clock-sensitive change during active clock edge at time 30.0 ns on register "|presettable_up_down_counter|Q[3]~reg0"
+Warning: Found clock-sensitive change during active clock edge at time 30.0 ns on register "|presettable_up_down_counter|Q[2]~reg0"
+Warning: Found clock-sensitive change during active clock edge at time 30.0 ns on register "|presettable_up_down_counter|Q[1]~reg0"
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      66.25 %
+Info: Number of transitions in simulation is 1230
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 5 warnings
+    Info: Allocated 179 megabytes of memory during processing
+    Info: Processing ended: Sat Dec 19 14:57:39 2015
+    Info: Elapsed time: 00:00:47
+
+

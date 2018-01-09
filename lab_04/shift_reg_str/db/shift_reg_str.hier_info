@@ -1,0 +1,61 @@
+|shift_reg_str
+CL => D_FF:X:0:DFF.Cl
+CL => D_FF:X:1:DFF.Cl
+CL => D_FF:X:2:DFF.Cl
+CL => D_FF:X:3:DFF.Cl
+E => D_FF:X:0:DFF.E
+E => D_FF:X:1:DFF.E
+E => D_FF:X:2:DFF.E
+E => D_FF:X:3:DFF.E
+L => D_FF:X:0:DFF.L
+L => D_FF:X:1:DFF.L
+L => D_FF:X:2:DFF.L
+L => D_FF:X:3:DFF.L
+S_In => D_FF:X:3:DFF.D
+D_In[0] => D_FF:X:0:DFF.L_value
+D_In[1] => D_FF:X:1:DFF.L_value
+D_In[2] => D_FF:X:2:DFF.L_value
+D_In[3] => D_FF:X:3:DFF.L_value
+S_Out <= D_FF:X:0:DFF.Q
+d[0] <= D_FF:X:0:DFF.Q
+d[1] <= D_FF:X:1:DFF.Q
+d[2] <= D_FF:X:2:DFF.Q
+d[3] <= D_FF:X:3:DFF.Q
+
+
+|shift_reg_str|D_FF:\X:3:DFF
+Cl => Q~reg0.CLK
+E => Q~reg0.ENA
+L => Q~0.OUTPUTSELECT
+D => Q~0.DATAA
+L_value => Q~0.DATAB
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|shift_reg_str|D_FF:\X:2:DFF
+Cl => Q~reg0.CLK
+E => Q~reg0.ENA
+L => Q~0.OUTPUTSELECT
+D => Q~0.DATAA
+L_value => Q~0.DATAB
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|shift_reg_str|D_FF:\X:1:DFF
+Cl => Q~reg0.CLK
+E => Q~reg0.ENA
+L => Q~0.OUTPUTSELECT
+D => Q~0.DATAA
+L_value => Q~0.DATAB
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|shift_reg_str|D_FF:\X:0:DFF
+Cl => Q~reg0.CLK
+E => Q~reg0.ENA
+L => Q~0.OUTPUTSELECT
+D => Q~0.DATAA
+L_value => Q~0.DATAB
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

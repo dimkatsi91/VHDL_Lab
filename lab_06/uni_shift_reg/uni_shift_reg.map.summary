@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sun Jan 03 15:45:14 2016
+Quartus II 64-Bit Version : 7.2 Build 151 09/26/2007 SJ Full Version
+Revision Name : uni_shift_reg
+Top-level Entity Name : uni_shift_reg
+Family : Cyclone II
+Total logic elements : 17
+    Total combinational functions : 17
+    Dedicated logic registers : 16
+Total registers : 16
+Total pins : 37
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

@@ -1,0 +1,8 @@
+|Y_gate
+A => Y_out~0.IN1
+A => Y_out~1.IN1
+B => Y_out~1.IN0
+B => Y_out~0.IN0
+Y_out <= Y_out~2.DB_MAX_OUTPUT_PORT_TYPE
+
+

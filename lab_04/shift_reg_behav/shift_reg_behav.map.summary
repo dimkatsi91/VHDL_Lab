@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Mon Nov 30 13:54:36 2015
+Quartus II 64-Bit Version : 7.2 Build 151 09/26/2007 SJ Full Version
+Revision Name : shift_reg_behav
+Top-level Entity Name : shift_reg_behav
+Family : Cyclone II
+Total logic elements : 5
+    Total combinational functions : 5
+    Dedicated logic registers : 5
+Total registers : 5
+Total pins : 13
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

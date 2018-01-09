@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sat Dec 05 18:56:17 2015
+Quartus II Version : 7.2 Build 151 09/26/2007 SJ Full Version
+Revision Name : serial_adder_subtractor
+Top-level Entity Name : serial_adder_subtractor
+Family : Cyclone II
+Total logic elements : 17
+    Total combinational functions : 17
+    Dedicated logic registers : 16
+Total registers : 16
+Total pins : 23
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

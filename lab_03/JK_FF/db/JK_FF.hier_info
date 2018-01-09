@@ -1,0 +1,16 @@
+|JK_FF
+J => p1~3.IN0
+J => p1~2.IN0
+J => p1~0.IN0
+J => p1~1.IN0
+K => p1~3.IN1
+K => p1~1.IN1
+K => p1~0.IN1
+K => p1~2.IN1
+pre => Q~3.IN1
+clr => Q~reg0.ACLR
+clr => Q~3.IN0
+clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,98 @@
+Flow report for lpm_counter_dim
+Sat Dec 19 18:31:56 2015
+Quartus II Version 7.2 Build 151 09/26/2007 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow Log
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2007 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------------+
+; Flow Summary                                                                  ;
++------------------------------------+------------------------------------------+
+; Flow Status                        ; Successful - Sat Dec 19 18:31:56 2015    ;
+; Quartus II Version                 ; 7.2 Build 151 09/26/2007 SJ Full Version ;
+; Revision Name                      ; lpm_counter_dim                          ;
+; Top-level Entity Name              ; lpm_counter_dim                          ;
+; Family                             ; Cyclone II                               ;
+; Device                             ; EP2C35F672C6                             ;
+; Timing Models                      ; Final                                    ;
+; Met timing requirements            ; N/A                                      ;
+; Total logic elements               ; 41                                       ;
+;     Total combinational functions  ; 41                                       ;
+;     Dedicated logic registers      ; 8                                        ;
+; Total registers                    ; 8                                        ;
+; Total pins                         ; 22                                       ;
+; Total virtual pins                 ; 0                                        ;
+; Total memory bits                  ; 0                                        ;
+; Embedded Multiplier 9-bit elements ; 0                                        ;
+; Total PLLs                         ; 0                                        ;
++------------------------------------+------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 12/19/2015 18:31:56 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; lpm_counter_dim     ;
++-------------------+---------------------+
+
+
++-----------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                        ;
++------------------------------------+---------+---------------+-------------+------------+
+; Assignment Name                    ; Value   ; Default Value ; Entity Name ; Section Id ;
++------------------------------------+---------+---------------+-------------+------------+
+; PARTITION_COLOR                    ; 2147039 ; --            ; --          ; Top        ;
+; PARTITION_NETLIST_TYPE             ; SOURCE  ; --            ; --          ; Top        ;
+; USE_GENERATED_PHYSICAL_CONSTRAINTS ; Off     ; --            ; --          ; eda_palace ;
++------------------------------------+---------+---------------+-------------+------------+
+
+
++---------------------------------------------------------------+
+; Flow Elapsed Time                                             ;
++----------------------+--------------+-------------------------+
+; Module Name          ; Elapsed Time ; Average Processors Used ;
++----------------------+--------------+-------------------------+
+; Analysis & Synthesis ; 00:00:22     ; 1.0                     ;
+; Total                ; 00:00:22     ; --                      ;
++----------------------+--------------+-------------------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off lpm_counter_dim -c lpm_counter_dim
+
+
+
