@@ -1,6 +1,6 @@
 #VHDL Exercises
 
-MSc Course: "Digital Design with VHDL" (Lab Exercises) 
+MSc Course: "Design of Digital Systems with VHDL" (Lab Exercises) 
 
 MSc Title: "Electronics & Information Processing" @ University of Patras, Greece 
 
