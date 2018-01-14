@@ -1,16 +1,16 @@
-## VHDL Lab Exercises
+<h3>VHDL Lab Exercises</h3>
 
-MSc Course: "Design of Digital Systems with VHDL" (Lab Exercises) 
+<h5>MSc Course: "Design of Digital Systems with VHDL" (Lab Exercises)</h5>
 
-MSc Title: "Electronics & Information Processing" @ University of Patras, Greece 
+<h5>MSc Title: "Electronics & Information Processing" @ University of Patras, Greece</h5>
 
-Author: Dimos Katsimardos 
+<h5>Author: Dimos Katsimardos</h5>
 
-Period: 2015 November - 2016 February
+<h5>Period: 2015 November - 2016 February</h5>
 
-Description: VHDL lab exercises from simple behavioral and sequential circuits to a simple CPU design with hardwired and microprogrammed logic
+<h5>Description: VHDL lab exercises from simple behavioral and sequential circuits to a simple CPU design with hardwired and microprogrammed logic</h5>
 
-Software/CAD: Altera Quartus 7.2
+<h5>Software/CAD: Altera Quartus 7.2</h5>
 
 [vhdl lab GitHub site](https://dimkatsi91.github.io/VHDL_Lab/)
 
