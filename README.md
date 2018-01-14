@@ -1,4 +1,4 @@
-<h3>VHDL Lab Exercises</h3>
+<h2>VHDL Lab Exercises</h2>
 
 <h5>MSc Course: "Design of Digital Systems with VHDL" (Lab Exercises)</h5>
 
