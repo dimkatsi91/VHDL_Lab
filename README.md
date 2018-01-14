@@ -1,4 +1,4 @@
-# VHDL Exercises
+# VHDL Lab Exercises
 
 MSc Course: "Design of Digital Systems with VHDL" (Lab Exercises) 
 
@@ -12,7 +12,7 @@ Description: VHDL lab exercises from simple behavioral and sequential circuits t
 
 Software/CAD: Altera Quartus 7.2
 
-URL: (https://dimkatsi91.github.io/VHDL_Lab/)
+URL: [vhdl_lab_site](https://dimkatsi91.github.io/VHDL_Lab/)
 
 -----------------------------------------------------------------------------------------------------------------------------
 
