@@ -1,4 +1,4 @@
-#VHDL Exercises
+# VHDL Exercises
 
 MSc Course: "Design of Digital Systems with VHDL" (Lab Exercises) 
 
@@ -12,21 +12,21 @@ Description: VHDL lab exercises from simple behavioral and sequential circuits t
 
 Software/CAD: Altera Quartus 7.2
 
-URL: https://dimkatsi91.github.io/VHDL_Lab/
+URL: (https://dimkatsi91.github.io/VHDL_Lab/)
 
 -----------------------------------------------------------------------------------------------------------------------------
 
 
-Lab 01: Simple Combinational Circuits
+* Simple Combinational Circuits
 
-Lab 02: Advanced Combinational Circuits
+* Advanced Combinational Circuits
 
-Lab 03: Sequential Circuits
+* Sequential Circuits
 
-Lab 04: Serial Adders/Subtractors
+* Serial Adders/Subtractors
 
-Lab 05: Arithmetic & Logic Unit ( ALU )
+* Arithmetic & Logic Unit ( ALU )
 
-Lab 06: Up Down Presetable Counter - Universal Shift Register - Combinational Shift Circuit
+* Up Down Presetable Counter - Universal Shift Register - Combinational Shift Circuit
 
-Lab 07: A very simple CPU
+* A very simple CPU
